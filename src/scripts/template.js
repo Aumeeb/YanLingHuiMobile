@@ -24,6 +24,12 @@ const header = `
                         <div>登录 | 注册</div>
                 </div>
         </header>
+`;
+
+
+const banner=
+`
+
 `
 // after HTML document get ready then injection footer contents inside...
 

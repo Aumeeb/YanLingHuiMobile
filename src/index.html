@@ -6,17 +6,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
+        <link rel="stylesheet" href="./css/mui.min.css">
         <link rel="stylesheet/less" type="text/css" href="./less/common.less" />
         <script src="./scripts/utils/less.min.js"></script>
-        <script src="./scripts/utils/jquery.3.3.1.js"></script>
+		<script src="./scripts/utils/jquery.3.3.1.js"></script>
+		<script src="./scripts/utils/mui.min.js"></script>
         <script src="./scripts/template.js"></script>
 </head>
 
 <body>
         
-        <img src="./images/index_help01.png" alt="">
-        <img src="./images/index_help02.png" alt="">
-        <img src="./images/index_help03.png" alt="">
+        <div id="slider" class="mui-slider">
+		<div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="./images/img4.jpg">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/img1.jpg">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/img2.jpg">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/img3.jpg">
+				</a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+				<a href="#">
+					<img src="./images/img4.jpg">
+				</a>
+			</div>
+
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="#">
+					<img src="./images/img1.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="mui-slider-indicator">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+		</div>
+	</div>
+
 </body>
 
 </html>
+
+
+<script type="text/javascript" charset="utf-8">
+	mui.init({
+		swipeBack: true //启用右滑关闭功能
+	});
+	var slider = mui("#slider");
+	document.getElementById("switch").addEventListener('toggle', function (e) {
+		if (e.detail.isActive) {
+			slider.slider({
+				interval: 1000
+			});
+		} else {
+			slider.slider({
+				interval: 0
+			});
+		}
+	});
+</script>
