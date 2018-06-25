@@ -1,0 +1,76 @@
+//reset CSS 
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@footerBackgroundColor : #313433;
+@YLH:#1eaa34;
+@headerLine:#E5E5E5;
+
+@pl16:16px;
+
+header{
+    >ul{
+        display: flex;
+        list-style: none;
+        align-content: flex-start;
+        padding-left: @pl16;  
+        padding-right: @pl16;
+        >li{
+            flex: 1;
+            text-align: center;
+            line-height: 2rem;
+        }
+        border-bottom: 1px solid @headerLine;
+    }
+    >div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+      
+        padding: @pl16;
+            font-size: 1.5rem;
+        >img:nth-child(1){
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        >div:nth-child(2){
+            color: @YLH;
+            font-size: 1.5rem;
+        }
+        >div:nth-child(3){
+            line-height: 1.5rem;
+            font-size: 1.2rem;
+            flex-grow: 1;//这三个元素只有它在有空余空间时可伸缩，也就是它占据了所有剩余空间
+            display: flex;//将它设置为flex,就可以单独对他进行主轴右对齐
+            justify-content: flex-end;
+        }
+
+    }
+    
+   
+}
+
+// for each rows element of blockType in HTML Footer Element.
+@footerLineHeight: 40px;
+footer{
+    color: white;
+    background-color: @footerBackgroundColor;
+    text-align: center;
+    >div:nth-child(1){
+        line-height: @footerLineHeight;
+    }
+    >div:nth-child(2){
+       a{
+           line-height: @footerLineHeight;
+       }
+    }
+}

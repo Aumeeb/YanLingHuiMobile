@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/noberk/YanLingHui-Mobile/issues"
   },
-  "homepage": "https://github.com/noberk/YanLingHui-Mobile#readme"
+  "homepage": "https://github.com/noberk/YanLingHui-Mobile#readme",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
 }
