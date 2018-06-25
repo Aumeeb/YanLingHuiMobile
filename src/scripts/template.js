@@ -1,6 +1,6 @@
 //footer template for each mobile page
 const footer = `
-<footer>
+<footer id="footer">
                 <div>Copyright © 延陵荟 All Rights Reserved</div>
                 <div>
                         <a href="">苏ICP备17075422号-1</a>
@@ -10,7 +10,7 @@ const footer = `
 
 //header template for each mobile page
 const header = `
-<header>
+<header id="header">
                 <ul>
                         <li>首页</li>
                         <li>任务大厅</li>
@@ -21,7 +21,7 @@ const header = `
                 <div>
                         <img src="./images/logo.png" alt="">
                         <div>延陵荟互助系统</div>
-                        <div>登录 | 注册</div>
+                        <div><a href="./login.html">登录</a>&nbsp;<span>|</span>&nbsp;<a href="./register.html">注册</a></div>
                 </div>
         </header>
 `;

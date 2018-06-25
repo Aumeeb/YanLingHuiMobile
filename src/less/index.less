@@ -1,0 +1,64 @@
+
+@import "common.less";
+
+
+.YLhelpInfo_Padding{
+    padding:0 16px;
+}
+.space{
+    margin-top: 10px;
+}
+.YLhelpInfo{
+  
+    .YLhelpInfo_Padding();
+    >header{
+       .title();
+    }
+    >p{
+        margin-top: 10px;
+        font-size: 0.875rem;
+    }
+}
+
+.gallery{
+  
+    .plr10();
+    >ul{
+        >li{
+            >div{
+                >img{
+                    width: 100%;
+                }
+            }
+            >div:nth-child(2){
+                text-indent: 30px;
+            }
+        }
+    }
+  
+}
+.honourWall{
+    background-color: @honourWallBackground;
+    >div:nth-child(1){
+        .title();
+    }
+    >ul{
+        .space();
+        display: flex;
+        
+        >li{
+            flex: 1;
+            text-align: center;
+        }
+    }
+}
+
+.urgentMission{
+    >div:nth-child(1){
+        .title();
+    }
+    >div:nth-child(2){
+        text-align: center;
+    }
+    
+}
