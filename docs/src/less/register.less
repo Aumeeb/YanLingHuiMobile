@@ -1,0 +1,46 @@
+@import "common.less";
+
+.buttonLightGreen{
+    background: #79D0BE !important;
+    border: 1px solid #79D0BE !important;
+}
+form{
+    .space();
+    >div{
+        line-height: 2rem;
+        font-size: 1.2rem;
+        
+        >span:nth-child(1){
+            font-weight: bold;
+            .plr10();
+        }
+        >span:nth-child(2){
+            color: #999;
+            font-weight: bold;
+            padding-left: 20px
+        }
+    }
+}
+.PIN{
+    text-align: right;
+    margin-right: 30px;
+    position: relative;
+    top: -2.65rem;
+    float: right;
+    .buttonLightGreen();
+}
+.regButton{
+    width: 50%;
+    .buttonLightGreen();
+}
+.regContainer{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    height: 70px;
+}
+hr{
+    height: 0;
+    border-top: 1px dashed #c1c1c1;
+    margin: 20px  0;
+}

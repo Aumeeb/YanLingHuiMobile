@@ -1,0 +1,3 @@
+# These order below that will not upload to github automatically
+node_modules
+install
