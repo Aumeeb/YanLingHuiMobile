@@ -1,0 +1,1 @@
+remove(Elements.H_login_reg);
