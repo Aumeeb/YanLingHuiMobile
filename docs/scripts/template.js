@@ -9,11 +9,11 @@ const footer = `
 `;
 
 const urls={
-        index:'../index.html',
-        quest:'../quest.html',
-        your:'../your.html',
-        experts:'../experts.html',
-        ranks:'ranks.html',
+        index:'./index.html',
+        quest:'./quest.html',
+        your:'./your.html',
+        experts:'./experts.html',
+        ranks:'./ranks.html',
         
 }
 
