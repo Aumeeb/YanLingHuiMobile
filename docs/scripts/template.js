@@ -24,7 +24,7 @@ const AppFooter=`
 			<span class="mui-tab-label">首页</span>
 		</a>
 		<a class="mui-tab-item" href="${urls.quest}" onClick="navigateTo('${urls.quest}');">
-			<span class="mui-icon mui-icon-flag"><span class="mui-badge">9</span></span>
+			<span class="mui-icon mui-icon-flag"></span>
 			<span class="mui-tab-label">任务大厅</span>
 		</a>
 		<a class="mui-tab-item" href="${urls.experts}" onClick="navigateTo('${urls.experts}');">
