@@ -8,6 +8,39 @@ const footer = `
 </footer>
 `;
 
+const urls={
+        index:'../index.html',
+        quest:'../quest.html',
+        your:'../your.html',
+        experts:'../experts.html',
+        ranks:'ranks.html',
+        
+}
+
+const AppFooter=`
+<nav class="mui-bar mui-bar-tab">
+		<a class="mui-tab-item mui-active"  onClick="navigateTo('${urls.index}');">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" onClick="navigateTo('${urls.quest}');">
+			<span class="mui-icon mui-icon-flag"><span class="mui-badge">9</span></span>
+			<span class="mui-tab-label">任务大厅</span>
+		</a>
+		<a class="mui-tab-item" onClick="navigateTo('${urls.experts}');">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">名医汇</span>
+		</a>
+		<a class="mui-tab-item" onClick="navigateTo('${urls.ranks}');">
+			<span class="mui-icon mui-icon-star"></span>
+			<span class="mui-tab-label">排行榜</span>
+		</a>
+		<a class="mui-tab-item" onClick="navigateTo('${urls.your}');">
+			<span class="mui-icon mui-icon-gear"></span>
+			<span class="mui-tab-label">个人中心</span>
+		</a>
+	</nav>
+`;
 const nav = `
 <ul>
         <li><a href="./index.html">首页</a></li>
@@ -20,7 +53,6 @@ const nav = `
 //header template for each mobile page
 const header = `
 <header id="header">
-        ${nav}
         <div>
                 <img src="./images/logo.png" alt="">
                 <div>延陵荟互助系统</div>
@@ -45,6 +77,9 @@ function InitPage() {
 
         }
 }
+function navigateTo(url) {
+        location.href=url;
+}
 /**delete Any HTMLElement you want by ID */
 function remove(eleID) {
         $(() => { $(`#${eleID}`).remove(); })
@@ -54,7 +89,7 @@ $(() => {
         const body = $("body");
         if (body != undefined) {
                 $(header).insertBefore(body.children().first());
-                $(footer).insertAfter(body.children().last());
+               $(AppFooter).insertAfter(body.children().last());   //no footer
         }
 
         InitPage();
