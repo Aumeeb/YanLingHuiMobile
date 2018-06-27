@@ -19,23 +19,23 @@ const urls={
 
 const AppFooter=`
 <nav class="mui-bar mui-bar-tab">
-		<a class="mui-tab-item mui-active"  onClick="navigateTo('${urls.index}');">
+		<a class="mui-tab-item mui-active" href="" onClick="navigateTo('${urls.index}');">
 			<span class="mui-icon mui-icon-home"></span>
 			<span class="mui-tab-label">首页</span>
 		</a>
-		<a class="mui-tab-item" onClick="navigateTo('${urls.quest}');">
+		<a class="mui-tab-item" href="" onClick="navigateTo('${urls.quest}');">
 			<span class="mui-icon mui-icon-flag"><span class="mui-badge">9</span></span>
 			<span class="mui-tab-label">任务大厅</span>
 		</a>
-		<a class="mui-tab-item" onClick="navigateTo('${urls.experts}');">
+		<a class="mui-tab-item" href="" onClick="navigateTo('${urls.experts}');">
 			<span class="mui-icon mui-icon-person"></span>
 			<span class="mui-tab-label">名医汇</span>
 		</a>
-		<a class="mui-tab-item" onClick="navigateTo('${urls.ranks}');">
+		<a class="mui-tab-item" href="" onClick="navigateTo('${urls.ranks}');">
 			<span class="mui-icon mui-icon-star"></span>
 			<span class="mui-tab-label">排行榜</span>
 		</a>
-		<a class="mui-tab-item" onClick="navigateTo('${urls.your}');">
+		<a class="mui-tab-item" href="" onClick="navigateTo('${urls.your}');">
 			<span class="mui-icon mui-icon-gear"></span>
 			<span class="mui-tab-label">个人中心</span>
 		</a>
