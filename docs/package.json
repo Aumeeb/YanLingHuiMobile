@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/noberk/YanLingHui-Mobile#readme",
   "dependencies": {
+    "@types/jquery": "^3.3.4",
     "live-server": "^1.2.0"
   }
 }

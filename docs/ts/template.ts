@@ -1,23 +1,22 @@
 //footer template for each mobile page
-const footer = `
-<footer id="footer">
-        <div>Copyright © 延陵荟 All Rights Reserved</div>
-        <div>
-                <a href="">苏ICP备17075422号-1</a>
-        </div>
-</footer>
-`;
-
-const urls = {
+class Template {
+    public footer: string = `
+    <footer id="footer">
+            <div>Copyright © 延陵荟 All Rights Reserved</div>
+            <div>
+                    <a href="">苏ICP备17075422号-1</a>
+            </div>
+    </footer>
+    `;
+    public urls = {
         index: './index.html',
         quest: './quest.html',
         your: './your.html',
         experts: './experts.html',
         ranks: './ranks.html',
 
-}
-
-const AppFooter = `
+    }
+    public AppFooter: string = `
 <nav class="mui-bar mui-bar-tab">
 		<a class="mui-tab-item mui-active" href="${urls.index}" onClick="navigateTo('${urls.index}');">
 			<span class="mui-icon mui-icon-home"></span>
@@ -41,7 +40,8 @@ const AppFooter = `
 		</a>
 	</nav>
 `;
-const nav = `
+
+    public nav: string = `
 <ul>
         <li><a href="./index.html">首页</a></li>
         <li><a href="./missionCenter.html">任务大厅</a></li>
@@ -51,7 +51,7 @@ const nav = `
 </ul>
 `
 //header template for each mobile page
-const header = `
+    public header: string = `
 <header id="header">
         <div>
                 <img src="./images/logo.png" alt="">
@@ -61,38 +61,44 @@ const header = `
 </header>
 `;
 
-const DP = {
+    public DP = {
         /**html page title */
         title: "延陵荟"
-}
-const Elements = {
+    }
+    public Elements = {
         H_login_reg: "login_reg"
-}
-/**initalize your mobile project and set defualt parameters for it.  */
-function InitPage() {
+    }
+    InitPage() {
         try {
-                $("title").html(DP.title)
+            $("title").html(DP.title)
 
         } catch (error) {
 
         }
-}
-function navigateTo(url) {
+    }
+/**initalize your mobile project and set defualt parameters for it.  */
+    navigateTo(url: string) :void{
         location.href = url;
-}
-/**delete Any HTMLElement you want by ID */
-function remove(eleID) {
+    }
+    /**delete Any HTMLElement you want by ID */
+     remove(eleID:string):void {
         $(() => { $(`#${eleID}`).remove(); })
+    }
 }
+
+
+
+var template = new Template();
+
 // after HTML document get ready then injection footer contents inside...
 $(() => {
-        const body = $("body");
-        if (body != undefined) {
-                $(header).insertBefore(body.children().first());
-                $(AppFooter).insertAfter(body.children().last());   //no footer
-        }
+    const body = $("body");
+    if (body != undefined) {
+        $(header).insertBefore(body.children().first());
+        $(AppFooter).insertAfter(body.children().last());   //no footer
+    }
 
-        InitPage();
+    InitPage();
 })
 
 
