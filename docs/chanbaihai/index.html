@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="src/css/swiper.min.css">
+</head>
+<body>
+<header class="container-fluied flex">
+    <div >
+        <span><i class="iconfont">&#xe66f;</i></span>
+        <span class="fs14">延陵荟互助系统</span>
+    </div>
+</header>
+<!--header-->
+
+
+<!--slider-->
+<div class="swiper-container container-fluied">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">Slide 1</div>
+        <div class="swiper-slide slide2">Slide 2</div>
+        <div class="swiper-slide slide3">Slide 3</div>
+        <div class="swiper-slide slide4">Slide 4</div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<!--slider-->
+<!---->
+
+<!--footer-->
+<footer class="container-fluied flex">
+    <div class="active"><a href="#"><i class="iconfont">&#xe66f;</i></a></div>
+    <div><a href="#"><i class="iconfont">&#xe66f;</i></a></div>
+    <div><a href="#"><i class="iconfont">&#xe66f;</i></a></div>
+    <div><a href="#"><i class="iconfont">&#xe66f;</i></a></div>
+    <div><a href="#"><i class="iconfont">&#xe66f;</i></a></div>
+</footer>
+<script src="src/js/swiper.js"></script>
+<script>
+    let mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+        }
+    })
+</script>
+</body>
+</html>
