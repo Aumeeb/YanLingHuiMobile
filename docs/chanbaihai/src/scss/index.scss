@@ -1,0 +1,94 @@
+.container-fluied{
+  width: 100%;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.column{
+  flex-direction: column;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #E3E3E3;
+  height: 50px;
+  .iconfont{
+    font-size:20px !important;
+    color:#444444;
+  }
+  & .active .iconfont{
+    color: #8BC34A;
+}
+}
+header{
+  height: 50px;
+  background-color:#8BC34A;
+  color: #fff;
+}
+.swiper-container{
+  height: 100px;
+  .slide1{
+    background-color: red;
+  }
+  .slide2{
+    background: green;
+  }
+  .slide3{
+    background: orange;
+  }
+  .slide4{
+    background: pink;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******reset css*********/
+@font-face {
+  font-family: 'iconfont';  /* project id 682385 */
+  src: url('//at.alicdn.com/t/font_682385_hwoyrhr8p7e.eot');
+  src: url('//at.alicdn.com/t/font_682385_hwoyrhr8p7e.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_682385_hwoyrhr8p7e.woff') format('woff'),
+  url('//at.alicdn.com/t/font_682385_hwoyrhr8p7e.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_682385_hwoyrhr8p7e.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+  overflow-x:hidden;}
+
+@for $i from 12 through 20{
+  .fs#{$i} {font-size:#{$i}px !important;}
+}
+/******reset css*********/
