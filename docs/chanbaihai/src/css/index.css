@@ -1,6 +1,11 @@
 .container-fluied {
   width: 100%; }
 
+body {
+  max-width: 768px;
+  margin: 0 auto;
+  position: relative; }
+
 .flex {
   display: flex;
   justify-content: space-around;
@@ -9,8 +14,15 @@
 .column {
   flex-direction: column; }
 
+.mainContent {
+  width: 100%;
+  height: calc(100% - 100px);
+  overflow: auto; }
+
+/**footer**/
 footer {
-  position: fixed;
+  position: absolute;
+  max-width: 768px;
   bottom: 0;
   left: 0;
   background-color: #E3E3E3;
@@ -21,6 +33,8 @@ footer {
   footer .active .iconfont {
     color: #8BC34A; }
 
+/**footer**/
+/****header and slider***/
 header {
   height: 50px;
   background-color: #8BC34A;
@@ -37,6 +51,82 @@ header {
   .swiper-container .slide4 {
     background: pink; }
 
+/****header and slider***/
+/***message***/
+.help {
+  height: 40px;
+  background-color: #E3E3E3; }
+
+/***message***/
+/**famous doc***/
+.justifyTwo {
+  flex-wrap: wrap; }
+  .justifyTwo > div {
+    margin: 2px 0;
+    height: 80px;
+    width: 48%;
+    border: 1px solid #000; }
+
+/**famous doc***/
+/***hot search**/
+.hotSearch {
+  padding: 4px 0; }
+  .hotSearch a {
+    color: #333;
+    font-size: 12px; }
+
+/***hot search**/
+/****honer-top****/
+.honer-top, .emergency-task-title {
+  padding: 0 10px;
+  justify-content: space-between;
+  background-color: #E3E3E3; }
+
+.honer-Doc div .doc-Photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #29bb9c; }
+
+.honer-Doc div .doc-Dis {
+  width: 70%;
+  height: 100%;
+  justify-content: center; }
+  .honer-Doc div .doc-Dis .doc-Detail {
+    margin-top: 4px;
+    width: 100%;
+    max-height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all; }
+
+/****honer-top****/
+/****emergency task****/
+.emergency-task-content {
+  padding: 4px 2px; }
+  .emergency-task-content > div {
+    width: 100%;
+    border: 1px solid #000;
+    padding: 6px 10px;
+    margin-top: 4px;
+    height: 80px; }
+    .emergency-task-content > div:first-child {
+      margin-top: 0; }
+    .emergency-task-content > div .task-photo {
+      max-width: 20%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #29bb9c; }
+    .emergency-task-content > div .task-item {
+      width: 80%;
+      height: 100%; }
+      .emergency-task-content > div .task-item > p {
+        width: 100%; }
+        .emergency-task-content > div .task-item > p:nth-child(2) {
+          max-height: 3em; }
+
+/****emergency task****/
 /******reset css*********/
 @font-face {
   font-family: 'iconfont';
@@ -56,12 +146,17 @@ header {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: none; }
+  outline: none;
+  box-sizing: border-box;
+  font-size: 12px; }
 
 body, html {
   width: 100%;
   height: 100%;
   overflow-x: hidden; }
+
+a {
+  text-decoration: none; }
 
 .fs12 {
   font-size: 12px !important; }
@@ -89,5 +184,11 @@ body, html {
 
 .fs20 {
   font-size: 20px !important; }
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap; }
 
 /******reset css*********/
