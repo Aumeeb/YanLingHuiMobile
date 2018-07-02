@@ -25,23 +25,27 @@ footer {
   max-width: 768px;
   bottom: 0;
   left: 0;
-  background-color: #E3E3E3;
+  background-color: #e5e5e5;
   height: 50px; }
+  footer a {
+    color: #676767; }
   footer .iconfont {
     font-size: 20px !important;
-    color: #444444; }
+    color: #676767; }
+  footer .active a {
+    color: #50b4f9; }
   footer .active .iconfont {
-    color: #8BC34A; }
+    color: #50b4f9; }
 
 /**footer**/
 /****header and slider***/
 header {
   height: 50px;
-  background-color: #8BC34A;
+  background-color: #50b4f9;
   color: #fff; }
 
 .swiper-container {
-  height: 100px; }
+  height: 150px; }
   .swiper-container .slide1 {
     background-color: red; }
   .swiper-container .slide2 {
@@ -52,35 +56,61 @@ header {
     background: pink; }
 
 /****header and slider***/
-/***message***/
-.help {
-  height: 40px;
-  background-color: #E3E3E3; }
+.find-doc.justifyTwo {
+  padding: 10px 0; }
+  .find-doc.justifyTwo > div h2 {
+    color: #484848; }
+  .find-doc.justifyTwo > div .doc-name {
+    margin-bottom: 10px; }
+  .find-doc.justifyTwo > div div.doc-Photo {
+    width: 40px;
+    background-color: lightpink;
+    height: 40px;
+    border-radius: 50%;
+    position: static; }
 
-/***message***/
 /**famous doc***/
 .justifyTwo {
   flex-wrap: wrap; }
   .justifyTwo > div {
+    position: relative;
     margin: 2px 0;
     height: 80px;
-    width: 48%;
-    border: 1px solid #000; }
+    width: 45%;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5; }
+    .justifyTwo > div .doc-Dis {
+      justify-content: space-between;
+      align-items: flex-start; }
+    .justifyTwo > div .hospital {
+      height: 33%; }
+    .justifyTwo > div .doc-Photo {
+      position: absolute;
+      top: -1em;
+      right: 0; }
 
 /**famous doc***/
 /***hot search**/
+.hotSearch-con {
+  padding: 6px 0;
+  background-color: #ededed; }
+
 .hotSearch {
-  padding: 4px 0; }
+  padding: 10px 0;
+  background-color: #fff; }
   .hotSearch a {
-    color: #333;
+    color: #2194ff;
     font-size: 12px; }
+  .hotSearch dt {
+    padding: 0  0 0 4px;
+    border-left: 2px solid #ff7979; }
 
 /***hot search**/
 /****honer-top****/
 .honer-top, .emergency-task-title {
-  padding: 0 10px;
+  padding: 10px 10px;
   justify-content: space-between;
-  background-color: #E3E3E3; }
+  background-color: #fff; }
 
 .honer-Doc div .doc-Photo {
   width: 40px;
@@ -106,7 +136,7 @@ header {
   padding: 4px 2px; }
   .emergency-task-content > div {
     width: 100%;
-    border: 1px solid #000;
+    border: 1px solid #e5e5e5;
     padding: 6px 10px;
     margin-top: 4px;
     height: 80px; }
@@ -116,15 +146,16 @@ header {
       max-width: 20%;
       width: 40px;
       height: 40px;
-      border-radius: 50%;
+      border-radius: 5px;
       background-color: #29bb9c; }
     .emergency-task-content > div .task-item {
       width: 80%;
       height: 100%; }
       .emergency-task-content > div .task-item > p {
-        width: 100%; }
-        .emergency-task-content > div .task-item > p:nth-child(2) {
-          max-height: 3em; }
+        width: 100%;
+        color: #9f9e9e; }
+        .emergency-task-content > div .task-item > p:nth-child(1) {
+          color: #484848; }
 
 /****emergency task****/
 /******reset css*********/
@@ -186,6 +217,7 @@ a {
   font-size: 20px !important; }
 
 .ellipsis {
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-all;
