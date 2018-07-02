@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run server & npm run sass ",
     "sass": "node-sass -w -r YanLingHui/src/scss -o YanLingHui/src/css",
-    "server" : "live-server"
+    "server": "live-server"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,11 @@
   "homepage": "https://github.com/noberk/YanLingHui-Mobile#readme",
   "dependencies": {
     "@types/jquery": "^3.3.4",
+    "@types/node": "^10.5.1",
+    "@types/webpack": "^4.4.4",
     "live-server": "^1.2.0",
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.0",
+    "ts-loader": "^4.4.2",
+    "webpack": "^4.14.0"
   }
 }

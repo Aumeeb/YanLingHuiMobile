@@ -18,8 +18,8 @@ docs/YanLingHui/UX design
 ## index.html                   assigned to     👉🏽  产百海           80%💚
 ## login.html                    assigned to     👉🏽  Michelle        0% ❤️ 
 ## reg.html                       assigned to     👉🏽  Michelle        0% ❤️        
-## password_center          assigned to    👉🏽  ??                    0%❤️
-## profile                           assigned to    👉🏽  noberk           66%💛️ 
+## personal_center          assigned to    👉🏽  ??                    0%❤️
+## profile                           assigned to    👉🏽  Boberk           66%💛️ 
 ## password_find_step_1  assigned to   👉🏽  ??                    0%❤️   
 ## password_find_step_2  assigned to   👉🏽  ??                    0%❤️
 ## password_center          assigned to   👉🏽  ??                     0%❤️
