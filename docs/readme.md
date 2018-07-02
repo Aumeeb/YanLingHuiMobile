@@ -2,10 +2,10 @@
     延陵荟互助系统
 
 # Get Started
-1) npm i (for short form ,npm install)
-2) npm start
+npm run server
+npm run sass  (auto com)
 
-# authors                  role
+# authors                  roles
 @Noberk         Frond-end web 
 @产百海          Frond-end web 
 @Michelle       Frond-end web 

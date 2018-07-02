@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server && sass",
-    "sass": "node-sass -w -r YanLingHui/src/scss -o YanLingHui/src/css"
+    "start": "npm run server & npm run sass ",
+    "sass": "node-sass -w -r YanLingHui/src/scss -o YanLingHui/src/css",
+    "server" : "live-server"
   },
   "repository": {
     "type": "git",
