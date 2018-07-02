@@ -1,14 +1,16 @@
-#项目名称 
+#Project Name 
     延陵荟互助系统
 
-#作者
-noberk
-产百海
-michelle
+#authors
+@noberk
+@产百海
+@michelle
 
+#设计稿目录
+docs/YanLingHui/design
 
+#任务清单(自己领取)
+index.html    =>  产百海
 
-
-#任务清单
 
 
