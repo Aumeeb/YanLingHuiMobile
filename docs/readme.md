@@ -2,8 +2,9 @@
     延陵荟互助系统
 
 # Get Started
-npm run server
-npm run sass  (auto com)
+1) npm install (安装依赖包)
+2) npm run server (启动小型服务器)
+3) npm run sass  (sass自动编译)
 
 # authors                  roles
 @Noberk         Frond-end web 
