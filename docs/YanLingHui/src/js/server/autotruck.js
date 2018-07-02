@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var path = require("path");
-var devOption_1 = require("./devOption");
+import * as path from "path";
+import { dev } from './devOption';
 var copy = require('recursive-copy');
 //需要被复制的文件夹
 var foldersName = ['img', 'css', 'audio'];
 var srcPath = path.resolve(__dirname, '..') + '\\'; //获取资源路径
-var buildPath = path.resolve(__dirname, '../../') + '\\' + devOption_1.dev.outputFolder;
-function copyResources() {
+var buildPath = path.resolve(__dirname, '../../') + '\\' + dev.outputFolder;
+export function copyResources() {
     for (var _i = 0, foldersName_1 = foldersName; _i < foldersName_1.length; _i++) {
         var folderName = foldersName_1[_i];
         var from = srcPath + folderName;
@@ -26,4 +24,3 @@ function copyResources() {
         });
     }
 }
-exports.copyResources = copyResources;

@@ -1,11 +1,12 @@
 "use strict";
 exports.__esModule = true;
 var path = require("path");
+var devOption_1 = require("./YanLingHui/src/ts/server/devOption");
 var config = {
-    devtool: 'source-map',
-    entry: ['./src/index.ts'],
+    // devtool: 'source-map',
+    entry: ['./YanLingHui/src/ts/profile.ts'],
     output: {
-        path: path.resolve(__dirname, dev.outputFolder),
+        path: path.resolve(__dirname, devOption_1.dev.outputFolder),
         filename: 'bundle.js'
     },
     resolve: {
@@ -13,7 +14,7 @@ var config = {
         extensions: ['*', '.ts', '.js']
     },
     module: {
-        loaders: [
+        preLoaders: [
             { test: /\.ts$/, loader: 'ts-loader' },
         ]
     }

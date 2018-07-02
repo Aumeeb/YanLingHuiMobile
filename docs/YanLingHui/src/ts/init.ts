@@ -8,7 +8,9 @@ export function InitPage() {
         } catch (error) {
         }
 }
-
+export function hello(){
+        alert(1);
+}
 export function navigateTo(url:string) {
         location.href = url;
 }

@@ -1,7 +1,10 @@
-import * as webpack from "webpack";
+import webpack from "webpack";
+
 import * as path from "path";
 import { dev } from "./YanLingHui/src/ts/server/devOption";
 
+
+ 
 const config: webpack.Configuration = {
     // devtool: 'source-map',
     entry: ['./YanLingHui/src/ts/profile.ts'],
@@ -16,10 +19,10 @@ const config: webpack.Configuration = {
     },
 
     module: {
-        loaders: [
+        preLoaders: [
             { test: /\.ts$/, loader: 'ts-loader' },
-        ],  
-
+        ],
+        rules:[]
     }
 };
 

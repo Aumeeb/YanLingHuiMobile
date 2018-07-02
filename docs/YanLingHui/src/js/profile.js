@@ -1,5 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+import { hello } from "./init";
 var Profile = /** @class */ (function () {
     function Profile() {
         this.title = "个人中心";
@@ -13,4 +12,4 @@ var Profile = /** @class */ (function () {
     }
     return Profile;
 }());
-alert(1);
+hello();

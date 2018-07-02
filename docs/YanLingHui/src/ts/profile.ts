@@ -1,4 +1,5 @@
 import { page } from "./page";
+import { hello } from "./init";
 
 class Profile implements page {
           title: string;
@@ -14,4 +15,5 @@ class Profile implements page {
                               "职位证明", "备注",]
           }
 }
-alert(1);
+
+hello();
