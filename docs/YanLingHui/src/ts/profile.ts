@@ -1,7 +1,7 @@
-import { page } from "./page";
+import { Page } from "./page";
 import { hello } from "./init";
 
-class Profile implements page {
+class Profile implements Page {
           title: string;
           inputsName: Array<string>;
 

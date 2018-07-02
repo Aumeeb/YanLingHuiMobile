@@ -1,3 +1,3 @@
-export interface page{
+export interface Page{
           title:string
 }
