@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="container-fluied flex">
-    <div >
+    <div>
         <span><i class="iconfont">&#xe66f;</i></span>
         <span class="fs14">延陵荟互助系统</span>
     </div>
@@ -18,18 +18,130 @@
 
 
 <!--slider-->
-<div class="swiper-container container-fluied">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide slide1">Slide 1</div>
-        <div class="swiper-slide slide2">Slide 2</div>
-        <div class="swiper-slide slide3">Slide 3</div>
-        <div class="swiper-slide slide4">Slide 4</div>
+<div class="mainContent">
+    <div class="swiper-container container-fluied">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">Slide 1</div>
+            <div class="swiper-slide slide2">Slide 2</div>
+            <div class="swiper-slide slide3">Slide 3</div>
+            <div class="swiper-slide slide4">Slide 4</div>
+        </div>
+        <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-pagination"></div>
-</div>
 
-<!--slider-->
-<!---->
+    <!--slider-->
+    <!--message-->
+    <div class="container-fluied help flex fs12">
+        <span>我认识人人，人人认识我;我帮助人人，人人帮助我。</span>
+    </div>
+    <!--message-->
+    <!--famous doc-->
+
+    <div class="justifyTwo flex">
+        <div class="flex">找名医</div>
+        <div class="flex">求帮助</div>
+    </div>
+    <!--famous doc-->
+
+    <!--hot search-->
+    <dl class="container-fluied hotSearch flex fs12">
+        <dt>热搜:</dt>
+        <dt><a href="#">保健</a></dt>
+        <dt><a href="#">腹痛</a></dt>
+        <dt><a href="#">口腔</a></dt>
+        <dt><a href="#">湿疹</a></dt>
+        <dt><a href="#">保健</a></dt>
+        <dt><a href="#">腹痛</a></dt>
+    </dl>
+    <!--hot search-->
+
+
+    <!--honer top-->
+    <div class="container-fluied">
+        <div class="container-fluied flex honer-top">
+            <span class="fs14">光荣榜</span>
+            <span class="fs18"> &gt; </span>
+        </div>
+
+
+        <div class="justifyTwo flex honer-Doc">
+            <div class="flex">
+                <div class="doc-Photo flex">医生</div>
+                <div class="doc-Dis flex column">
+                    <div class="doc-name">医生名字</div>
+                    <p class="doc-Detail ">(简介:医介绍医绍绍医绍绍医绍...)</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="doc-Photo flex">医生</div>
+                <div class="doc-Dis flex column">
+                    <div class="doc-name">医生名字</div>
+                    <p class="doc-Detail ">(简介:医介绍医绍绍医绍绍医绍...)</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="doc-Photo flex">医生</div>
+                <div class="doc-Dis flex column">
+                    <div class="doc-name">医生名字</div>
+                    <p class="doc-Detail ">(简介:医介绍医绍绍医绍绍医绍...)</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="doc-Photo flex">医生</div>
+                <div class="doc-Dis flex column">
+                    <div class="doc-name">医生名字</div>
+                    <p class="doc-Detail ">(简介:医介绍医绍绍医绍医绍...)</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--honer top-->
+
+    <!--emergency task-->
+    <div class="container-fluied  emergency-task">
+        <div class="container-fluied flex emergency-task-title">
+            <span class="fs14">紧急任务</span>
+            <span class="fs18"> &gt; </span>
+        </div>
+
+        <div class="container-fluied emergency-task-content">
+            <div class="flex">
+                <div class="task-photo flex">图片</div>
+                <div class="task-item flex column">
+                    <p class="ellipsis fs14"><span class="fs14">任务标题:</span >标题内容</p>
+                    <p >任务内容: <span>任务内容任务内容任务内容容...</span></p>
+                    <p>发布时间: <span>2018-06-30</span></p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="task-photo flex">图片</div>
+                <div class="task-item flex column">
+                    <p class="ellipsis fs14"><span class="fs14">任务标题:</span >标题内容</p>
+                    <p >任务内容: <span>任务内容任务内容任务内容容...</span></p>
+                    <p>发布时间: <span>2018-06-30</span></p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="task-photo flex">图片</div>
+                <div class="task-item flex column">
+                    <p class="ellipsis fs14"><span class="fs14">任务标题:</span >标题内容</p>
+                    <p >任务内容: <span>任务内容任务内容任务内容容...</span></p>
+                    <p>发布时间: <span>2018-06-30</span></p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="task-photo flex">图片</div>
+                <div class="task-item flex column">
+                    <p class="ellipsis fs14"><span class="fs14">任务标题:</span >标题内容</p>
+                    <p >任务内容: <span>任务内容任务内容任务内容容...</span></p>
+                    <p>发布时间: <span>2018-06-30</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--emergency task-->
+</div>
 
 <!--footer-->
 <footer class="container-fluied flex">
@@ -41,9 +153,10 @@
 </footer>
 <script src="src/js/swiper.js"></script>
 <script>
-    let mySwiper = new Swiper ('.swiper-container', {
+    let mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true,
+        autoplay: true,
         pagination: {
             el: '.swiper-pagination',
         }
