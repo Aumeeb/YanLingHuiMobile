@@ -16,4 +16,4 @@ class Profile implements page {
           }
 }
 
-hello();
+hello("个人中心");

@@ -4,18 +4,18 @@ var path = require("path");
 var devOption_1 = require("./YanLingHui/src/ts/server/devOption");
 var config = {
     // devtool: 'source-map',
-    entry: ['./YanLingHui/src/ts/profile.ts'],
+    entry: devOption_1.Router2,
     output: {
-        path: path.resolve(__dirname, devOption_1.dev.outputFolder),
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, devOption_1.RelativePath),
+        filename: "[name].js"
     },
     resolve: {
         // Add `.ts` and `.tsx` as a resolvable extension.
         extensions: ['*', '.ts', '.js']
     },
     module: {
-        preLoaders: [
-            { test: /\.ts$/, loader: 'ts-loader' },
+        rules: [
+            { test: /\.ts$/, loader: 'ts-loader' }
         ]
     }
 };
