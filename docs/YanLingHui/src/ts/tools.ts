@@ -6,7 +6,6 @@ export function hello(str: string) {
         alert(str);
 }
 export function navigateTo(id: string, url: string) {
-   
         $(() => {
                 $(`#${id}`).click(() => {
                         location.href = url;

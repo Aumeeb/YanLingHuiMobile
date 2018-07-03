@@ -1,5 +1,6 @@
 import { navigateTo } from "./tools";
+import { ROUTER } from "./template";
 
 
-navigateTo("forgetPWD","./password_find_step_1.html")
-navigateTo("noAccount","./reg.html")
+navigateTo("forgetPWD",ROUTER.passwordFindStepOne)
+navigateTo("noAccount",ROUTER.reg)

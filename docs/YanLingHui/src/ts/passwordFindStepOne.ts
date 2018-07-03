@@ -1,9 +1,9 @@
 import { Page } from "./page";
-import { Template } from "./template";
+import { Template, ROUTER } from "./template";
 import { navigateTo } from "./tools";
 
-const URL = "./password_find_step_2.html";
-const INDEX = "../"
+const URL = ROUTER.passwordFindStepTwo;
+const INDEX = ROUTER.ROOT;
 class PassWordFindStepOne extends Template  implements Page {
     htmlTitle: string;
     title: string;

@@ -1,9 +1,6 @@
 import { Page } from "./page";
-import { Template } from "./template";
-import { navigateTo } from "./tools";
-
-
-const URL = "./password_find_step_1.html";
+import { Template, ROUTER } from "./template";
+ 
 class PassWordFindStepTwo extends Template  implements Page {
     htmlTitle: string;
     title: string;
@@ -13,7 +10,7 @@ class PassWordFindStepTwo extends Template  implements Page {
         this.htmlTitle = this.title;
 
         
-        this.render(this.headerWithUrl('./password_find_step_1.html'),undefined);
+        this.render(this.headerWithUrl(ROUTER.passwordFindStepOne),undefined);
         this.setTitle(this.htmlTitle);
 
         

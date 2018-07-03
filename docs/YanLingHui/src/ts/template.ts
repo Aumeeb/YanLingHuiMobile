@@ -45,13 +45,16 @@ export class Template {
                 })
         }
 }
-export const urls = {
+export const ROUTER = {
+        ROOT:"../",
         index: './index.html',
         quest: './quest.html',
-        your: './your.html',
-        experts: './experts.html',
+        experts: './experts_list.html',
         ranks: './ranks.html',
-
+        reg: './reg.html',
+        passwordFindStepOne: './password_find_step_1.html',
+        passwordFindStepTwo: './password_find_step_2html',
+        profile: './profile.html',
 }
 export const DP = {
         /**html page title */
