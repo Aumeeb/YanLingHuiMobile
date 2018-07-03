@@ -12,12 +12,10 @@ class PassWordFindStepOne extends Template  implements Page {
         super();
         this.title = "确认帐号";
         this.htmlTitle = this.title;
-        this.render(this.headerWithUrl(INDEX),undefined);
+        this.render(this.headerWithUrl({title:this.title,url:INDEX}),undefined);
         this.setTitle(this.htmlTitle);
         navigateTo("next",URL);
     }
-
-    
 }
 new PassWordFindStepOne;
 

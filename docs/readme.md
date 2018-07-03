@@ -23,15 +23,15 @@
 # 💎设计稿目录💎
 docs/YanLingHui/UX design
 
-# 📋任务清单📋                  作者                                        进度
-## index.html                   assigned to     👉🏽  产百海           80%💚
-## login.html                    assigned to     👉🏽  Noberk        100% ❤️ 
-## reg.html                       assigned to     👉🏽  Noberk        100% ❤️        
-## personal_center          assigned to    👉🏽  ??                    0%❤️
-## profile                           assigned to    👉🏽  Boberk           66%💛️ 
-## password_find_step_1  assigned to   👉🏽  Noberk           100%❤️   
-## password_find_step_2  assigned to   👉🏽  Noberk            100%❤️
-## password_center          assigned to   👉🏽  ??                     0%❤️
+# 📋任务清单📋                            作者                                        进度
+## index.html                              👉🏽  产百海           100%💚
+## login.html                               👉🏽  Noberk        100% 💚 
+## reg.html                                   👉🏽  Noberk         100% 💚        
+## personal_center                        👉🏽  产百海            0%❤️
+## profile                                       👉🏽  Boberk           66%💛️ 
+## password_find_step_1             👉🏽  Noberk           100%💚   
+## password_find_step_2            👉🏽  Noberk            100%💚
+## password_center                     👉🏽  ??                     0%❤️
 
 
 

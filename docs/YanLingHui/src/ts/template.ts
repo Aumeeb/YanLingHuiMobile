@@ -1,9 +1,12 @@
 import * as $ from "jquery";
 
+interface HeaderParam {
+        url: string
+        title: string
+}
+
 export class Template {
-        constructor() {
-                this.HEADER= this.headerWithUrl("#");
-        }
+        constructor() {}
         public FOOTER: string = `
                 <footer id="footer">
                         <div>Copyright © 延陵荟 All Rights Reserved</div>
@@ -12,26 +15,26 @@ export class Template {
                         </div>
                 </footer>
         `;
-        public HEADER: string;
-        headerWithUrl(url) {
+        
+        headerWithUrl(obj:HeaderParam) {
                 return `
                 <header class="header1">
-                <a id="pageBack" href="${url}"><</a>
-                <span>帐号注册</span>
+                <a id="pageBack" href="${obj.url}"><</a>
+                <span>${obj.title}</span>
                 </header>
                 `
         }
         /**
-         * // after HTML document get ready then injection footer contents inside...
-         * @param header 
-         * @param footer 
+         *  after HTML document get ready then injection footer contents inside...
          */
         render(header?: string, footer?: string) {
                 $(() => {
                         const body = $("body");
                         if (body != undefined) {
-                                $(header).insertBefore(body.children().first());
-                                $(footer).insertAfter(body.children().last());   //no footer
+                                if (header)
+                                        $(header).insertBefore(body.children().first());
+                                if (footer)
+                                        $(footer).insertAfter(body.children().last());   //no footer
                         }
 
                 })
@@ -46,24 +49,16 @@ export class Template {
         }
 }
 export const ROUTER = {
-        ROOT:"../",
+        ROOT: "../",
         index: './index.html',
         quest: './quest.html',
         experts: './experts_list.html',
         ranks: './ranks.html',
         reg: './reg.html',
         passwordFindStepOne: './password_find_step_1.html',
-        passwordFindStepTwo: './password_find_step_2html',
+        passwordFindStepTwo: './password_find_step_2.html',
         profile: './profile.html',
 }
-export const DP = {
-        /**html page title */
-        title: "延陵荟"
-}
-export const Elements = {
-        H_login_reg: "login_reg"
-}
-
 
 
 
