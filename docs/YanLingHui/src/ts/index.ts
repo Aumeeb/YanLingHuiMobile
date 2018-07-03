@@ -6,7 +6,7 @@ class Index implements Page {
           title: string;
           constructor() {
                this.title= "中国";
-               hello("hello index111");
+            //    hello("hello index111");
           }
 }
 

@@ -6,6 +6,12 @@
 2) npm run server (启动小型服务器)
 3) npm run sass  (sass自动编译)
 
+使用TypeScript开发
+1) npm install typescript -g 
+2) npm link typescript
+3) npm run webpack (自动编译ts文件到  YangLingHui/scr/js ) 参考proifle.ts
+
+
 # authors                  roles
 @🍍Noberk         Frond-end web 
 @🥇产百海          Frond-end web 
