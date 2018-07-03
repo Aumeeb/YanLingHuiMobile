@@ -1,4 +1,4 @@
-export interface Page{
-          title:string
-          htmlTitle:string;
+export interface Page {
+          title: string
+          htmlTitle: string;
 }

@@ -1,21 +1,20 @@
 import { Page } from "./page";
-import { Template, ROUTER } from "./template";
- 
+import { Template, ROUTER, header } from "./template";
 
-class PassWordFindStepTwo extends Template  implements Page {
+
+
+@header("确认帐号")
+class PassWordFindStepTwo extends Template {
     htmlTitle: string;
-    title: string;
+    static title: string
+
     constructor() {
         super();
-        this.title = "确认帐号";
-        this.htmlTitle = this.title;
 
-        
-        this.render(this.headerWithUrl({title:this.title,url:ROUTER.passwordFindStepOne}),undefined);
+        this.render(this.headerWithUrl({ title: PassWordFindStepTwo.title, url: ROUTER.passwordFindStepOne }), undefined);
         this.setTitle(this.htmlTitle);
 
-        
     }
-    
+
 }
 new PassWordFindStepTwo;

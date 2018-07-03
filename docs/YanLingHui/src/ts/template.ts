@@ -2,11 +2,13 @@ import * as $ from "jquery";
 
 interface HeaderParam {
         url: string
-        title: string
+        title: string | any
 }
-
+export const header = function (title: string) {
+        return target => { target.title = title }
+}
 export class Template {
-        constructor() {}
+        constructor() { }
         public FOOTER: string = `
                 <footer id="footer">
                         <div>Copyright © 延陵荟 All Rights Reserved</div>
@@ -15,8 +17,8 @@ export class Template {
                         </div>
                 </footer>
         `;
-        
-        headerWithUrl(obj:HeaderParam) {
+
+        headerWithUrl(obj: HeaderParam) {
                 return `
                 <header class="header1">
                 <a id="pageBack" href="${obj.url}"><</a>

@@ -1,20 +1,19 @@
-import { Page } from "./page";
-import { Template, ROUTER } from "./template";
+
+import { Template, ROUTER, header } from "./template";
 import { navigateTo } from "./tools";
 
-const URL = ROUTER.passwordFindStepTwo;
-const INDEX = ROUTER.ROOT;
-class PassWordFindStepOne extends Template  implements Page {
+ 
+ @header("确认帐号")
+class PassWordFindStepOne extends Template   {
     htmlTitle: string;
-    title: string;
+    static title: string;
    
     constructor() {
         super();
-        this.title = "确认帐号";
-        this.htmlTitle = this.title;
-        this.render(this.headerWithUrl({title:this.title,url:INDEX}),undefined);
+
+        this.render(this.headerWithUrl({title:PassWordFindStepOne.title,url:ROUTER.ROOT}),undefined);
         this.setTitle(this.htmlTitle);
-        navigateTo("next",URL);
+        navigateTo("next",ROUTER.passwordFindStepTwo);
     }
 }
 new PassWordFindStepOne;
