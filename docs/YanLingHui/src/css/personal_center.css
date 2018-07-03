@@ -23,8 +23,13 @@ a {
   font-size: 1.2rem;
   line-height: 3rem; }
   .header1 > a {
-    position: relative;
-    left: -35%; }
+    position: absolute;
+    left: 10px;
+    top: -3px;
+    font-size: 2rem; }
 
 .container {
   margin: 0 6%; }
+
+.pContainer {
+  padding: 0 6%; }

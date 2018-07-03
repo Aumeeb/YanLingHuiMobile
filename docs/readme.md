@@ -9,7 +9,7 @@
 使用TypeScript开发
 1) npm install typescript -g 
 2) npm link typescript
-3) npm run webpack (自动编译ts文件到  YangLingHui/scr/js ) 参考proifle.ts
+3) npm run webpack (自动编译ts文件到  YangLingHui/scr/js ) 参考profile.ts & profile.html
 
 
 # 💎Notice!💎

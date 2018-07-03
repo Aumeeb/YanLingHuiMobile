@@ -10,6 +10,10 @@ $headerBackgroundColor :  #90CC4A;
 $buttonBackgroundColor: #50b4f9;
 $blockBackgroundColor :#E3E2E2;  
 $inputHintColor: #C3C3C3;
+$headerTitleSpanColor: #666666;
+$headerBackgroundColor:#ebebeb;
+
+$lightGray:#333333;
 $aOrange:#ff9000;
 // for theme
 $themeBlue: #50b4f9;
@@ -41,8 +45,11 @@ a{
     font-size: $largeFontSize;
     line-height: 3rem;
     >a{
-        position: relative;
-        left: -35%;
+        position: absolute;
+        left: 10px;
+        top: -3px;
+        font-size: 2rem;
+        
     }
 }
 
@@ -61,4 +68,7 @@ a{
 
 .container{
     margin: 0 $indentMargin;
+}
+.pContainer{
+    padding: 0 $indentMargin;
 }
