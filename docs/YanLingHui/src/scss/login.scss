@@ -30,7 +30,7 @@
              border: 0;
              font-size: 1rem;
              padding-left: 60px;
-             border-bottom: 1px solid #cccccc;
+             border-bottom: 1px solid $themeGray;
              &:focus{
                  outline: none;
              }
@@ -44,12 +44,16 @@
           margin-top: 50px;
         }
     }
-    >div:nth-child(4){
-        >span:nth-child(1){
-
+    >nav{
+        font-size: $normalFontSize;
+        color: $themeGray;
+        margin-top: 60px;
+        >a:nth-child(1){
+          
         }
-        >span:nth-child(2){
+        >a:nth-child(2){
             color: $aOrange;
+            float: right;
         }
     }
 }
@@ -57,6 +61,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: $gray;
-  height: 50px;
+  color: #8f8f8f;
+  width: 100%;
+  text-align: center;
+  height: 80px;
+  font-size: $normalFontSize;
 }

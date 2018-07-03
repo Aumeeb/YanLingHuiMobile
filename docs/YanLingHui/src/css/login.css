@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/**
+主题色卡
+The YLH list of theme style colors.
+You may input all the variables of common global CSS here
+which watch its out that do not effect to others page.
+*/
 * {
   margin: 0;
   padding: 0; }
@@ -33,12 +40,12 @@ a {
     border: 0;
     font-size: 1rem;
     padding-left: 60px;
-    border-bottom: 1px solid #cccccc; }
+    border-bottom: 1px solid #999999; }
     .inputArea > div > input:focus {
       outline: none; }
 
 .inputArea > div:nth-child(3) > button {
-  height: 30px;
+  height: 40px;
   background-color: #50b4f9;
   width: 100%;
   color: white;
@@ -48,3 +55,21 @@ a {
   .inputArea > div:nth-child(3) > button:focus {
     border: 0;
     outline: none; }
+
+.inputArea > nav {
+  font-size: 1rem;
+  color: #999999;
+  margin-top: 60px; }
+  .inputArea > nav > a:nth-child(2) {
+    color: #ff9000;
+    float: right; }
+
+.loginFooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #8f8f8f;
+  width: 100%;
+  text-align: center;
+  height: 80px;
+  font-size: 1rem; }
