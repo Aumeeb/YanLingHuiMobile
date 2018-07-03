@@ -1,6 +1,50 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: white; }
+
 .container {
-  margin: 0 5%; }
+  margin: 0 6%; }
 
 .loginHeader {
-  background-color: red;
-  height: 200px; }
+  height: 130px;
+  background-image: url("../../images/login_banner.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-x: 40%;
+  background-position-y: 56%; }
+
+.inputArea > div {
+  height: 50px; }
+  .inputArea > div > span {
+    position: relative;
+    top: 1.5rem;
+    left: 1rem; }
+    .inputArea > div > span > img {
+      width: 8%; }
+  .inputArea > div > input {
+    width: 84%;
+    height: 30px;
+    border: 0;
+    font-size: 1rem;
+    padding-left: 60px;
+    border-bottom: 1px solid #cccccc; }
+    .inputArea > div > input:focus {
+      outline: none; }
+
+.inputArea > div:nth-child(3) > button {
+  height: 30px;
+  background-color: #50b4f9;
+  width: 100%;
+  color: white;
+  border-radius: 6px;
+  border: 0;
+  margin-top: 50px; }
+  .inputArea > div:nth-child(3) > button:focus {
+    border: 0;
+    outline: none; }

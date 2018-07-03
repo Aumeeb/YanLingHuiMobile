@@ -1,10 +1,40 @@
  
- //the YLH list of theme style colors 
+ //The YLH list of theme style colors 
+ //主题色卡
 $headerBackgroundColor :  #90CC4A;  
-$buttonBackgroundColor: #5677FC;
+$buttonBackgroundColor: #50b4f9;
 $blockBackgroundColor :#E3E2E2;  
 $inputHintColor: #C3C3C3;
+$aOrange:#ff9000;
+
+//Text indent
+//缩进
+$indentMargin: 6%;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: white;
+}
+
+@mixin defualtButton {
+    height: 30px;
+    background-color: $buttonBackgroundColor;
+    width: 100%;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    &:focus{
+        border: 0;
+        outline: none;
+    }
+}
 
 .container{
-    margin: 0 5%;
+    margin: 0 $indentMargin;
 }
