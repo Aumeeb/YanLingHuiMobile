@@ -34,7 +34,11 @@ export const Router2 = {
     "index": "./YanLingHui/src/ts/index.ts",
     "profile": "./YanLingHui/src/ts/profile.ts",
     "login": "./YanLingHui/src/ts/login.ts",
-    "reg": "./YanLingHui/src/ts/reg.ts"
+    "reg": "./YanLingHui/src/ts/reg.ts",
+    "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
+    "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts"
+
+    
 }
 export function relativeRoute(routes: Route[]) {
     var array = [];

@@ -23,6 +23,7 @@ a {
   font-size: 1.2rem;
   line-height: 3rem; }
   .header1 > a {
+    color: white;
     position: absolute;
     left: 10px;
     top: -3px;

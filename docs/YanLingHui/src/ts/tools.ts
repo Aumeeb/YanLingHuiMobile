@@ -5,8 +5,13 @@ import * as $ from "jquery";
 export function hello(str: string) {
         alert(str);
 }
-export function navigateTo(url: string) {
-        location.href = url;
+export function navigateTo(id: string, url: string) {
+   
+        $(() => {
+                $(`#${id}`).click(() => {
+                        location.href = url;
+                })
+        })
 }
 
 /**delete Any HTMLElement you want by ID */

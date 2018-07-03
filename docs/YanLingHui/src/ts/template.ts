@@ -1,6 +1,9 @@
 import * as $ from "jquery";
 
 export class Template {
+        constructor() {
+                this.HEADER= this.headerWithUrl("#");
+        }
         public FOOTER: string = `
                 <footer id="footer">
                         <div>Copyright © 延陵荟 All Rights Reserved</div>
@@ -9,12 +12,15 @@ export class Template {
                         </div>
                 </footer>
         `;
-        public HEADER: string = `
+        public HEADER: string;
+        headerWithUrl(url) {
+                return `
                 <header class="header1">
-                <a><</a>
+                <a id="pageBack" href="${url}"><</a>
                 <span>帐号注册</span>
                 </header>
-        `;
+                `
+        }
         /**
          * // after HTML document get ready then injection footer contents inside...
          * @param header 

@@ -45,6 +45,7 @@ a{
     font-size: $largeFontSize;
     line-height: 3rem;
     >a{
+        color: white;
         position: absolute;
         left: 10px;
         top: -3px;
@@ -65,7 +66,18 @@ a{
         outline: none;
     }
 }
-
+ 
+@mixin captcha {
+    height: 30px;
+    background-color: $buttonBackgroundColor;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    &:focus{
+        border: 0;
+        outline: none;
+    }
+}
 .container{
     margin: 0 $indentMargin;
 }

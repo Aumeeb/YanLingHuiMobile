@@ -16,7 +16,9 @@ exports.Router2 = {
     "index": "./YanLingHui/src/ts/index.ts",
     "profile": "./YanLingHui/src/ts/profile.ts",
     "login": "./YanLingHui/src/ts/login.ts",
-    "reg": "./YanLingHui/src/ts/reg.ts"
+    "reg": "./YanLingHui/src/ts/reg.ts",
+    "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
+    "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts"
 };
 function relativeRoute(routes) {
     var array = [];

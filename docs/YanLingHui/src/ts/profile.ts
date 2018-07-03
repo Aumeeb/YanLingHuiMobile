@@ -1,5 +1,5 @@
 import { Page } from "./page";
-import { hello } from "./init";
+import { hello } from "./tools";
 
 class Profile implements Page {
     htmlTitle: string;
