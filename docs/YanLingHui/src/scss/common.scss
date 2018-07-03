@@ -1,11 +1,50 @@
  
- //the YLH list of theme style colors 
+/**
+主题色卡
+The YLH list of theme style colors.
+You may input all the variables of common global CSS here
+which watch its out that do not effect to others page.
+*/
+ 
 $headerBackgroundColor :  #90CC4A;  
-$buttonBackgroundColor: #5677FC;
+$buttonBackgroundColor: #50b4f9;
 $blockBackgroundColor :#E3E2E2;  
 $inputHintColor: #C3C3C3;
+$aOrange:#ff9000;
+// for theme
+$themeBlue: $buttonBackgroundColor;
+$themeGray : #999999;
+//Text indent
+//缩进
+$indentMargin: 6%;
+
+//font size;
+$normalFontSize : 1rem;
 
 *{
- background: #5677FC;
- font-size: 1px;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: white;
+}
+
+@mixin defualtButton {
+    height: 40px;
+    background-color: $buttonBackgroundColor;
+    width: 100%;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    &:focus{
+        border: 0;
+        outline: none;
+    }
+}
+
+.container{
+    margin: 0 $indentMargin;
 }

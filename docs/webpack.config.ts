@@ -1,14 +1,17 @@
-import * as webpack from "webpack";
+import webpack from "webpack";
+
 import * as path from "path";
-import { dev } from "./YanLingHui/src/ts/server/devOption";
+import { dev, relativeRoute, Router, RelativePath, Router2 } from "./YanLingHui/src/ts/server/devOption";
+
+
 
 const config: webpack.Configuration = {
     // devtool: 'source-map',
-    entry: ['./YanLingHui/src/ts/profile.ts'],
+    entry: Router2,
 
     output: {
-        path: path.resolve(__dirname, dev.outputFolder), //获取当前路径
-        filename: 'bundle.js', //文件名
+        path: path.resolve(__dirname, RelativePath), //获取当前路径
+        filename: "[name].js"
     },
     resolve: {
         // Add `.ts` and `.tsx` as a resolvable extension.
@@ -16,10 +19,9 @@ const config: webpack.Configuration = {
     },
 
     module: {
-        loaders: [
-            { test: /\.ts$/, loader: 'ts-loader' },
-        ],  
-
+        rules: [
+            { test: /\.ts$/, loader: 'ts-loader' }
+        ]
     }
 };
 

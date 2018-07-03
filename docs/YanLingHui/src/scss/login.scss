@@ -1,0 +1,69 @@
+@import "common";
+
+
+
+.loginHeader{
+    
+    height: 130px;
+    background-image: url('../../images/login_banner.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: 40%;
+    background-position-y: 56%;
+    
+}
+
+.inputArea{
+    >div{
+        height: 50px;
+         >span{
+            position: relative;
+            top: 1.5rem;
+            left: 1rem;
+            >img{
+                width: 8%;
+            }
+         }
+         >input{
+             width: 100% - $indentMargin * 2 - 4%;
+             height: 30px;
+             border: 0;
+             font-size: 1rem;
+             padding-left: 60px;
+             border-bottom: 1px solid $themeGray;
+             &:focus{
+                 outline: none;
+             }
+         }
+    }
+ 
+    >div:nth-child(3){
+       
+        >button{
+          @include defualtButton;
+          margin-top: 50px;
+        }
+    }
+    >nav{
+        font-size: $normalFontSize;
+        color: $themeGray;
+        margin-top: 60px;
+        >a:nth-child(1){
+          
+        }
+        >a:nth-child(2){
+            color: $aOrange;
+            float: right;
+        }
+    }
+}
+.loginFooter{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #8f8f8f;
+  width: 100%;
+  text-align: center;
+  height: 80px;
+  font-size: $normalFontSize;
+}
