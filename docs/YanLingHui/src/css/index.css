@@ -1,3 +1,14 @@
+@charset "UTF-8";
+.tabIcon img {
+  width: 18px; }
+
+.icon:before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  margin-right: 6px; }
+
 .container-fluied {
   width: 100%; }
 
@@ -29,12 +40,31 @@ footer {
   height: 50px; }
   footer a {
     color: #676767; }
-  footer .iconfont {
-    font-size: 20px !important;
-    color: #676767; }
+  footer .tabIcon {
+    margin-bottom: 2px;
+    width: 18px;
+    height: 18px; }
+  footer > div:nth-child(1) .tabIcon {
+    background: url("../../images/index-icon/home.png") no-repeat center center/100%; }
+  footer > div:nth-child(1).active .tabIcon {
+    background: url("../../images/index-icon/home-active.png") no-repeat center center/100%; }
+  footer > div:nth-child(2) .tabIcon {
+    background: url("../../images/index-icon/task.png") no-repeat center center/100%; }
+  footer > div:nth-child(2).active .tabIcon {
+    background: url("../../images/index-icon/task-active.png") no-repeat center center/100%; }
+  footer > div:nth-child(3) .tabIcon {
+    background: url("../../images/index-icon/doc.png") no-repeat center center/100%; }
+  footer > div:nth-child(3).active .tabIcon {
+    background: url("../../images/index-icon/doc-active.png") no-repeat center center/100%; }
+  footer > div:nth-child(4) .tabIcon {
+    background: url("../../images/index-icon/top.png") no-repeat center center/100%; }
+  footer > div:nth-child(4).active .tabIcon {
+    background: url("../../images/index-icon/top-active.png") no-repeat center center/100%; }
+  footer > div:nth-child(5) .tabIcon {
+    background: url("../../images/index-icon/center.png") no-repeat center center/100%; }
+  footer > div:nth-child(5).active .tabIcon {
+    background: url("../../images/index-icon/center-active.png") no-repeat center center/100%; }
   footer .active a {
-    color: #50b4f9; }
-  footer .active .iconfont {
     color: #50b4f9; }
 
 /**footer**/
@@ -43,6 +73,8 @@ header {
   height: 50px;
   background-color: #50b4f9;
   color: #fff; }
+  header .logo {
+    margin-right: 8px; }
 
 .swiper-container {
   height: 150px; }
@@ -58,13 +90,18 @@ header {
 /****header and slider***/
 .find-doc.justifyTwo {
   padding: 10px 0; }
+  .find-doc.justifyTwo > div:nth-child(2) .doc-Photo {
+    background: url("../../images/index-icon/矢量智能对象.png") no-repeat center center/100% 100%; }
   .find-doc.justifyTwo > div h2 {
     color: #484848; }
   .find-doc.justifyTwo > div .doc-name {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    color: #484848; }
+  .find-doc.justifyTwo > div .doc-Detail {
+    color: #a7a7a7; }
   .find-doc.justifyTwo > div div.doc-Photo {
     width: 40px;
-    background-color: lightpink;
+    background: url("../../images/index-icon/矢量智能对象1.png") no-repeat center center/100% 100%;
     height: 40px;
     border-radius: 50%;
     position: static; }
@@ -72,13 +109,15 @@ header {
 /**famous doc***/
 .justifyTwo {
   flex-wrap: wrap; }
+  .justifyTwo.find-doc > div {
+    height: 80px;
+    border: 1px solid #e5e5e5; }
   .justifyTwo > div {
     position: relative;
     margin: 2px 0;
-    height: 80px;
+    height: 110px;
     width: 45%;
-    border-radius: 5px;
-    border: 1px solid #e5e5e5; }
+    border-radius: 5px; }
     .justifyTwo > div .doc-Dis {
       justify-content: space-between;
       align-items: flex-start; }
@@ -86,7 +125,7 @@ header {
       height: 33%; }
     .justifyTwo > div .doc-Photo {
       position: absolute;
-      top: -1em;
+      top: 0;
       right: 0; }
 
 /**famous doc***/
@@ -108,35 +147,54 @@ header {
 /***hot search**/
 /****honer-top****/
 .honer-top, .emergency-task-title {
-  padding: 10px 10px;
+  padding: 10px 10px 0 10px;
   justify-content: space-between;
-  background-color: #fff; }
+  background-color: #fff;
+  color: #484848; }
+  .honer-top .icon:before, .emergency-task-title .icon:before {
+    background: url("../../images/index-icon/crown.png") no-repeat center center/100% auto; }
 
-.honer-Doc div .doc-Photo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #29bb9c; }
-
-.honer-Doc div .doc-Dis {
-  width: 70%;
-  height: 100%;
-  justify-content: center; }
-  .honer-Doc div .doc-Dis .doc-Detail {
-    margin-top: 4px;
-    width: 100%;
-    max-height: 3em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: break-all; }
+.honer-Doc > div {
+  padding-top: 32px;
+  background: url("../../images/index-icon/椭圆1拷贝.png") no-repeat left bottom;
+  background-size: 100% 100%; }
+  .honer-Doc > div:nth-child(1) .doc-Photo {
+    background: url("../../images/index-icon/doc-1.png") no-repeat center center/100% 100%; }
+  .honer-Doc > div:nth-child(2) .doc-Photo {
+    background: url("../../images/index-icon/doc-2.png") no-repeat center center/100% 100%; }
+  .honer-Doc > div .doc-Photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
+  .honer-Doc > div .doc-Dis {
+    padding-left: 10px;
+    width: 90%;
+    height: 100%;
+    justify-content: center; }
+    .honer-Doc > div .doc-Dis .doc-name {
+      color: #6f5137; }
+    .honer-Doc > div .doc-Dis .doc-Detail {
+      color: #8d6f54 !important;
+      margin: 7px 0 3px 0;
+      width: 100%;
+      max-height: 3em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-all; }
+    .honer-Doc > div .doc-Dis .hospital {
+      color: #fff !important; }
 
 /****honer-top****/
 /****emergency task****/
+.emergency-task-title {
+  border-bottom: 1px solid #e5e5e5; }
+  .emergency-task-title .icon:before {
+    background: url("../../images/index-icon/emergence.png") no-repeat center center/100% auto; }
+
 .emergency-task-content {
   padding: 4px 2px; }
   .emergency-task-content > div {
     width: 100%;
-    border: 1px solid #e5e5e5;
     padding: 6px 10px;
     margin-top: 4px;
     height: 80px; }
@@ -217,10 +275,10 @@ a {
   font-size: 20px !important; }
 
 .ellipsis {
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
-  word-break: break-all;
+  word-break: break-word;
   white-space: nowrap; }
 
 /******reset css*********/
