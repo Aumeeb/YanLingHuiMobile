@@ -15,7 +15,8 @@ exports.Router = [
 exports.Router2 = {
     "index": "./YanLingHui/src/ts/index.ts",
     "profile": "./YanLingHui/src/ts/profile.ts",
-    "login": "./YanLingHui/src/ts/login.ts"
+    "login": "./YanLingHui/src/ts/login.ts",
+    "reg": "./YanLingHui/src/ts/reg.ts"
 };
 function relativeRoute(routes) {
     var array = [];

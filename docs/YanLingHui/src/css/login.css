@@ -15,6 +15,17 @@ ul {
 a {
   text-decoration: white; }
 
+.header1 {
+  height: 50px;
+  background-color: #50b4f9;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 3rem; }
+  .header1 > a {
+    position: relative;
+    left: -35%; }
+
 .container {
   margin: 0 6%; }
 

@@ -12,7 +12,7 @@ $blockBackgroundColor :#E3E2E2;
 $inputHintColor: #C3C3C3;
 $aOrange:#ff9000;
 // for theme
-$themeBlue: $buttonBackgroundColor;
+$themeBlue: #50b4f9;
 $themeGray : #999999;
 //Text indent
 //缩进
@@ -20,6 +20,7 @@ $indentMargin: 6%;
 
 //font size;
 $normalFontSize : 1rem;
+$largeFontSize : 1.2rem;
 
 *{
     margin: 0;
@@ -30,6 +31,19 @@ ul{
 }
 a{
     text-decoration: white;
+}
+
+.header1{
+    height: 50px;
+    background-color: $themeBlue;
+    text-align: center;
+    color: white;
+    font-size: $largeFontSize;
+    line-height: 3rem;
+    >a{
+        position: relative;
+        left: -35%;
+    }
 }
 
 @mixin defualtButton {

@@ -33,7 +33,8 @@ export const Router2 = {
 
     "index": "./YanLingHui/src/ts/index.ts",
     "profile": "./YanLingHui/src/ts/profile.ts",
-    "login": "./YanLingHui/src/ts/login.ts" 
+    "login": "./YanLingHui/src/ts/login.ts",
+    "reg": "./YanLingHui/src/ts/reg.ts"
 }
 export function relativeRoute(routes: Route[]) {
     var array = [];

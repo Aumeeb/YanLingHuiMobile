@@ -25,7 +25,7 @@ docs/YanLingHui/UX design
 
 # 📋任务清单📋                  作者                                        进度
 ## index.html                   assigned to     👉🏽  产百海           80%💚
-## login.html                    assigned to     👉🏽  Michelle        0% ❤️ 
+## login.html                    assigned to     👉🏽  Noberk        100% ❤️ 
 ## reg.html                       assigned to     👉🏽  Michelle        0% ❤️        
 ## personal_center          assigned to    👉🏽  ??                    0%❤️
 ## profile                           assigned to    👉🏽  Boberk           66%💛️ 
