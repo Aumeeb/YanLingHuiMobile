@@ -10,7 +10,7 @@ export const header = function (title: string) {
 export class Template {
         constructor() { }
 
-        public Hometab() {
+        public homeTab(): string {
                 return `
                 <footer class="container-fluied flex">
                 <div class="tab active"><a href="${ROUTER.index}" class="flex column"><i class="tabIcon"></i>首页</a></div>
@@ -21,7 +21,7 @@ export class Template {
             </footer>
                        `
         };
-        private tabClick() {
+        private tabClick(): void {
                 $(() => {
                         //底部状态切换
                         $(".tab").click(function () {
@@ -30,7 +30,7 @@ export class Template {
                 })
         };
         /** 用于带有 返回导航的 头部标签 */
-        public headerWithUrl(obj: HeaderParam) {
+        public headerWithUrl(obj: HeaderParam): string {
                 return `
                 <header class="header1">
                 <a id="pageBack" href="${obj.url}"><</a>
@@ -42,7 +42,7 @@ export class Template {
         /**
          *  after HTML document get ready then injection footer contents inside...
          */
-        public render(header?: string | null | undefined, footer?: string) {
+        public render(header?: string | null | undefined, footer?: string): void {
                 $(() => {
                         const body = $("body");
                         if (body != undefined) {
@@ -56,7 +56,7 @@ export class Template {
 
                 })
         }
-        public setTitle(title: string) {
+        public setTitle(title: string): void {
                 $(() => { $("title").html(title) })
         }
 }
