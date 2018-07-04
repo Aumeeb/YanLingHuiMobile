@@ -17,7 +17,27 @@ export class Template {
                         </div>
                 </footer>
         `;
-
+        Hometab() {
+                return `
+                <footer class="container-fluied flex">
+                <div class="tab active"><a href="${ROUTER.index}" class="flex column"><i class="tabIcon"></i>首页</a></div>
+                <div class="tab"><a href="${ROUTER.quest}" class="flex column"><i class="tabIcon"></i>任务大厅</a></div>
+                <div class="tab"><a href="${ROUTER.expertsList}" class="flex column"><i class="tabIcon"></i>名医汇</a></div>
+                <div class="tab"><a href="${ROUTER.rank}" class="flex column"><i class="tabIcon"></i>排行榜</a></div>
+                <div class="tab"><a href="${ROUTER.personalCenter}" class="flex column"><i class="tabIcon"></i>我</a></div>
+            </footer>
+                       `
+        };
+        tabClick(){
+                $(()=>{
+                        //底部状态切换
+                        $(".tab").click(function () {
+                            $(this).addClass("active").siblings().removeClass("active")
+                        })
+                    
+                    
+                    })
+        };
         /** 用于带有 返回导航的 头部标签 */
         headerWithUrl(obj: HeaderParam) {
                 return `
@@ -31,7 +51,7 @@ export class Template {
         /**
          *  after HTML document get ready then injection footer contents inside...
          */
-        render(header?: string, footer?: string) {
+        render(header?: string|null|undefined, footer?: string) {
                 $(() => {
                         const body = $("body");
                         if (body != undefined) {
@@ -44,7 +64,7 @@ export class Template {
                 })
         }
         setTitle(title: string) {
-                $(() => {$("title").html(title)})
+                $(() => { $("title").html(title) })
         }
 }
 export const ROUTER = {
@@ -57,6 +77,7 @@ export const ROUTER = {
         passwordFindStepOne: './password_find_step_1.html',
         passwordFindStepTwo: './password_find_step_2.html',
         profile: './profile.html',
+        personalCenter:"./personal_center.html"
 }
 
 
