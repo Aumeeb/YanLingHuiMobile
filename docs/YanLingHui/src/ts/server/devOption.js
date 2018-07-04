@@ -20,8 +20,8 @@ exports.Router2 = {
     "rank": "./YanLingHui/src/ts/rank.ts",
     "newTask": "./YanLingHui/src/ts/newTask.ts",
     "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
-    "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts"
-
+    "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts",
+    "personal_center":"./YanLingHui/src/ts/personal_center.ts"
 };
 function relativeRoute(routes) {
     var array = [];
