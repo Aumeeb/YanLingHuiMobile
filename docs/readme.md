@@ -16,8 +16,8 @@
 
 
 # authors                  roles
-@🍍Noberk         Frond-end web 
-@🥇产百海          Frond-end web 
+@🍍Noberk         Frond-end web <Br/>
+@🥇产百海          Frond-end web  <Br/>
 @🏅Michelle       Frond-end web 
 
 # 💎设计稿目录💎
