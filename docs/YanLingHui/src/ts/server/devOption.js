@@ -18,6 +18,7 @@ exports.Router2 = {
     "login": "./YanLingHui/src/ts/login.ts",
     "reg": "./YanLingHui/src/ts/reg.ts",
     "rank": "./YanLingHui/src/ts/rank.ts",
+    "newTask": "./YanLingHui/src/ts/newTask.ts",
     "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
     "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts"
 

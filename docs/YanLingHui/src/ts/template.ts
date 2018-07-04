@@ -18,6 +18,7 @@ export class Template {
                 </footer>
         `;
 
+        /** 用于带有 返回导航的 头部标签 */
         headerWithUrl(obj: HeaderParam) {
                 return `
                 <header class="header1">
@@ -26,6 +27,7 @@ export class Template {
                 </header>
                 `
         }
+        header
         /**
          *  after HTML document get ready then injection footer contents inside...
          */
@@ -42,12 +44,7 @@ export class Template {
                 })
         }
         setTitle(title: string) {
-                $(() => {
-                        try {
-                                $("title").html(title)
-                        } catch (error) {
-                        }
-                })
+                $(() => {$("title").html(title)})
         }
 }
 export const ROUTER = {
