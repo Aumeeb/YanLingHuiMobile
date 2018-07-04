@@ -1,7 +1,8 @@
 
-import { Template, ROUTER, header } from "./template";
+import { Template, ROUTER } from "./template";
+import { Header } from "./utils/decorators";
 
-@header("新建任务")
+@Header("新建任务")
 class NewTask extends Template   {
     
     static title: string;
