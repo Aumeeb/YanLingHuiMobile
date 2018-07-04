@@ -16,10 +16,10 @@
 
 
 # authors                  roles
-@🍍Noberk         Frond-end web <Br/>
-@🥇产百海          Frond-end web  <Br/>
-@🏅Michelle       Frond-end web 
-
+@🍍Noberk         Frond-end web   已完成页面数量5个<Br/>
+@🥇产百海          Frond-end web     已完成页面数量2个<Br/>
+@🏅Michelle       Frond-end web     已完成页面数量0个
+                                                                    
 # 💎设计稿目录💎
 docs/YanLingHui/UX design
 
