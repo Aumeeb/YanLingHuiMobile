@@ -6,8 +6,10 @@
   content: '';
   display: inline-block;
   width: 15px;
-  height: 10px;
-  margin-right: 6px; }
+  height: 12px;
+  margin-right: 6px;
+  position: relative;
+  top: 2px; }
 
 .container-fluied {
   width: 100%; }
@@ -78,14 +80,6 @@ header {
 
 .swiper-container {
   height: 150px; }
-  .swiper-container .slide1 {
-    background-color: red; }
-  .swiper-container .slide2 {
-    background: green; }
-  .swiper-container .slide3 {
-    background: orange; }
-  .swiper-container .slide4 {
-    background: pink; }
 
 /****header and slider***/
 .find-doc.justifyTwo {

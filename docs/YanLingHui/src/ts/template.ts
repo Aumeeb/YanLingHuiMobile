@@ -9,15 +9,25 @@ export const header = function (title: string) {
 }
 export class Template {
         constructor() { }
-        public FOOTER: string = `
-                <footer id="footer">
-                        <div>Copyright © 延陵荟 All Rights Reserved</div>
-                        <div>
-                                <a href="">苏ICP备17075422号-1</a>
-                        </div>
+        tab(){
+                return   `
+                <footer class="container-fluied flex">
+                        <div class="tab active"><a href="${ROUTER.index}" class="flex column"><i class="tabIcon"></i>首页</a></div>
+                        <div class="tab"><a href="${ROUTER.quest}" class="flex column"><i class="tabIcon"></i>任务大厅</a></div>
+                        <div class="tab"><a href="${ROUTER.experts}" class="flex column"><i class="tabIcon"></i>名医汇</a></div>
+                        <div class="tab"><a href="${ROUTER.ranks}" class="flex column"><i class="tabIcon"></i>排行榜</a></div>
+                        <div class="tab"><a href="${ROUTER.center}" class="flex column"><i class="tabIcon"></i>我</a></div>
                 </footer>
-        `;
-
+                `
+            };
+            tabClick(){  //点击切换底部class
+                        $(()=>{
+                            //底部状态切换
+                            $(".tab").click(function () {
+                                $(this).addClass("active").siblings().removeClass("active")
+                            })
+                        })
+            };
         headerWithUrl(obj: HeaderParam) {
                 return `
                 <header class="header1">
@@ -29,7 +39,7 @@ export class Template {
         /**
          *  after HTML document get ready then injection footer contents inside...
          */
-        render(header?: string, footer?: string) {
+        render(header?: string|undefined|null, footer?: string) {
                 $(() => {
                         const body = $("body");
                         if (body != undefined) {
@@ -50,6 +60,7 @@ export class Template {
                 })
         }
 }
+
 export const ROUTER = {
         ROOT: "../",
         index: './index.html',
@@ -60,6 +71,7 @@ export const ROUTER = {
         passwordFindStepOne: './password_find_step_1.html',
         passwordFindStepTwo: './password_find_step_2.html',
         profile: './profile.html',
+        center:"./personal_center.html"
 }
 
 

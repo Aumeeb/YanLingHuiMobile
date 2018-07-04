@@ -12,8 +12,10 @@ $url:"../../images/index-icon/";
     content: '';
     display: inline-block;
     width: 15px;
-    height: 10px;
+    height: 12px;
     margin-right:6px;
+    position:relative;
+    top:2px;
   }
 }
 .container-fluied {
@@ -89,18 +91,6 @@ header {
 
 .swiper-container {
   height: 150px;
-  .slide1 {
-    background-color: red;
-  }
-  .slide2 {
-    background: green;
-  }
-  .slide3 {
-    background: orange;
-  }
-  .slide4 {
-    background: pink;
-  }
 }
 
 /****header and slider***/

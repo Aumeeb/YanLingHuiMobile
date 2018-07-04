@@ -1,10 +1,9 @@
-import { Page } from "./page";
-
-new class implements Page {
-  htmlTitle: string;
-  title!: string;
-  constructor() {
-    this.title = "中国";
+import { Template } from "./template";
+class  Tab extends Template{
+  constructor(){
+    super();
+    this.render(null,this.tab());
+    this.tabClick()
   }
 }
-
+new Tab();
