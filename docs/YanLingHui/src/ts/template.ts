@@ -54,7 +54,7 @@ export const ROUTER = {
         ROOT: "../",
         index: './index.html',
         quest: './quest.html',
-        experts: './experts_list.html',
+        expertsList: './experts_list.html',
         rank: './rank.html',
         reg: './reg.html',
         passwordFindStepOne: './password_find_step_1.html',
