@@ -6,8 +6,10 @@
   content: '';
   display: inline-block;
   width: 15px;
-  height: 10px;
-  margin-right: 6px; }
+  height: 14px;
+  margin-right: 6px;
+  position: relative;
+  top: 2px; }
 
 .container-fluied {
   width: 100%; }
@@ -43,7 +45,7 @@ footer {
   footer .tabIcon {
     margin-bottom: 2px;
     width: 18px;
-    height: 18px; }
+    height: 20px; }
   footer > div:nth-child(1) .tabIcon {
     background: url("../../images/index-icon/home.png") no-repeat center center/100%; }
   footer > div:nth-child(1).active .tabIcon {
@@ -78,14 +80,6 @@ header {
 
 .swiper-container {
   height: 150px; }
-  .swiper-container .slide1 {
-    background-color: red; }
-  .swiper-container .slide2 {
-    background: green; }
-  .swiper-container .slide3 {
-    background: orange; }
-  .swiper-container .slide4 {
-    background: pink; }
 
 /****header and slider***/
 .find-doc.justifyTwo {
