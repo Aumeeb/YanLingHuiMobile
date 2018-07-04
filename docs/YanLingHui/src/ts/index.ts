@@ -7,4 +7,3 @@ new class implements Page {
     this.title = "中国";
   }
 }
-
