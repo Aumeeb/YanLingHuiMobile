@@ -8,7 +8,7 @@ class Rank extends Template {
     constructor() {
         super();
 
-        this.render(this.headerWithUrl({ title: Rank.title, url: ROUTER.ROOT }), undefined);
+        this.render(this.headerWithUrl({ title: Rank.title, url: ROUTER.index }), undefined);
         this.setTitle(this.htmlTitle);
     }
 }

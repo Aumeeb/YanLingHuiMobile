@@ -10,6 +10,7 @@
     padding-left: 20px;
     line-height: 1.725rem;
 }
+
 .regInputRow{
     >div{
         height: 70px;
@@ -35,8 +36,11 @@
                  }
                 }
          }
-         
-         
+         >span:nth-child(1){
+             width: 10px !important;
+             color: red;
+         }
+
     }
 }
 

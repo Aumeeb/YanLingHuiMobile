@@ -4,7 +4,7 @@ var path = require("path");
 var devOption_1 = require("./YanLingHui/src/ts/server/devOption");
 var config = {
     // devtool: 'source-map',
-    entry: devOption_1.Router2,
+    entry: devOption_1.Router,
     output: {
         path: path.resolve(__dirname, devOption_1.RelativePath),
         filename: "[name].js"

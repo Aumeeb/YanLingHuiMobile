@@ -1,13 +1,13 @@
 import webpack from "webpack";
 
 import * as path from "path";
-import { dev, relativeRoute, Router, RelativePath, Router2 } from "./YanLingHui/src/ts/server/devOption";
+import {  Router, RelativePath } from "./YanLingHui/src/ts/server/devOption";
 
 
 
 const config: webpack.Configuration = {
     // devtool: 'source-map',
-    entry: Router2,
+    entry: Router,
 
     output: {
         path: path.resolve(__dirname, RelativePath), //获取当前路径

@@ -23,13 +23,8 @@ export const RelativePath: string = './YanLingHui/src/js';
 interface Route {
     key: string, value: string
 }
-export const Router: Route[] =
-    [
-        { key: "index", value: "./YanLingHui/src/ts/index.ts" },
-        { key: "profile", value: "./YanLingHui/src/ts/profile.ts" },
-        { key: "login", value: "./YanLingHui/src/ts/login.ts" }
-    ]
-export const Router2 = {
+
+export const Router = {
 
     "index": "./YanLingHui/src/ts/index.ts",
     "profile": "./YanLingHui/src/ts/profile.ts",
@@ -37,6 +32,7 @@ export const Router2 = {
     "reg": "./YanLingHui/src/ts/reg.ts",
     "rank": "./YanLingHui/src/ts/rank.ts",
     "newTask": "./YanLingHui/src/ts/newTask.ts",
+    "expert": "./YanLingHui/src/ts/expert.ts",
     "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
     "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts"
 
