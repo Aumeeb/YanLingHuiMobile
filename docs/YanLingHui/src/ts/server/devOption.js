@@ -7,21 +7,16 @@ exports.dev = {
     outputFolder: 'build'
 };
 exports.RelativePath = './YanLingHui/src/js';
-exports.Router = [
-    { key: "index", value: "./YanLingHui/src/ts/index.ts" },
-    { key: "profile", value: "./YanLingHui/src/ts/profile.ts" },
-    { key: "login", value: "./YanLingHui/src/ts/login.ts" }
-];
-exports.Router2 = {
+exports.Router = {
     "index": "./YanLingHui/src/ts/index.ts",
     "profile": "./YanLingHui/src/ts/profile.ts",
     "login": "./YanLingHui/src/ts/login.ts",
     "reg": "./YanLingHui/src/ts/reg.ts",
     "rank": "./YanLingHui/src/ts/rank.ts",
     "newTask": "./YanLingHui/src/ts/newTask.ts",
+    "expert": "./YanLingHui/src/ts/expert.ts",
     "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
     "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts"
-
 };
 function relativeRoute(routes) {
     var array = [];
