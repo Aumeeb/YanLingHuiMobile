@@ -98,6 +98,9 @@ a {
       border: 0; }
       .regInputRow > div > span > input:focus {
         outline: none; }
+  .regInputRow > div > span:nth-child(1) {
+    width: 10px !important;
+    color: red; }
 
 .regButtonWrap {
   text-align: center; }
