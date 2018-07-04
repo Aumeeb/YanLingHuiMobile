@@ -3,7 +3,6 @@ class Tab extends Template{
   constructor(){
     super();
     this.render(null,this.Hometab());
-    this.tabClick()
   }
 };
 new Tab();
