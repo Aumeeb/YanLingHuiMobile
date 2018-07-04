@@ -55,7 +55,7 @@ export const ROUTER = {
         index: './index.html',
         quest: './quest.html',
         experts: './experts_list.html',
-        ranks: './ranks.html',
+        rank: './rank.html',
         reg: './reg.html',
         passwordFindStepOne: './password_find_step_1.html',
         passwordFindStepTwo: './password_find_step_2.html',

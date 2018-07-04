@@ -1,0 +1,68 @@
+@import "common";
+
+.rankContainer{
+    padding: 5px;
+
+}
+.rankTabs{
+     margin-top: 10px;
+
+    >span{
+        display: inline-block;
+        height: 40px;
+        line-height: 2.2rem;
+        width: 50%;
+        text-align: center;
+        border-radius: 2px;
+        color: white;
+        font-weight: 500;
+    }
+    >span:nth-child(1){
+        background: linear-gradient(to top,#50b4f9, #77c5fb);
+    }
+    >span:nth-child(2){
+        background: linear-gradient(to top,#c8e8fe, #c8e8fe);
+        color:black;
+
+        
+    }
+}
+
+.rankUL {
+    >li{
+        padding :   15px 0  ;
+        border-bottom: 1px solid #ccc;
+        >span{
+            display: inline-block;
+        }
+        >span:nth-child(1){
+            width: 12%;
+            text-align: center;
+        }
+        >span:nth-child(2){
+            
+        }
+        >span:nth-child(3){
+            margin-left: 10px;
+            width: 12%;
+            text-align: center;
+            >p:nth-child(2){
+                font-size: 0.1rem;
+            }
+        }
+        >span:nth-child(4){
+            float: right;
+            >p:nth-child(1){
+                >span:nth-child(1){
+                    color: #5ebafa;
+                }   
+                >span:nth-child(2){
+                    font-size: 0.1rem;
+                }
+            }
+            >p:nth-child(2){
+                font-size: 0.1rem;
+            }
+        }
+    }
+}
