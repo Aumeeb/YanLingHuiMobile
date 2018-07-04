@@ -1,4 +1,4 @@
-import { Page } from "./page";
+
 import { Template, ROUTER, header } from "./template";
 
 @header("新建任务")
