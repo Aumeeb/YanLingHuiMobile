@@ -1,68 +1,283 @@
 @import "common";
-
-.rankContainer{
-    padding: 5px;
-
+@import "index";
+*{
+    box-sizing:content-box;
 }
-.rankTabs{
-     margin-top: 10px;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend {
+	margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-family: inherit; font-size:100%; text-align: left; vertical-align: baseline;
+}
+img {
+	border:none;
+}
+body, p, td, th, li {
+	font-family: Arial, Helvetica, sans-serif; font-size:12px;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+ol,ul {
+	list-style: none;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.fs12 {
+	font-size: 12px;
+}
+.fs14 {
+	font-size: 14px;
+}
+.fs14 {
+	font-size: 14px;
+}
+.fs16 {
+	font-size: 16px;
+}
+.fs18 {
+	font-size: 18px;
+}
+.textLeft {
+	text-align: left;
+}
+.textCenter {
+	text-align: center ;
+}
+.textRight {
+	text-align: right;
+}
+/*******************************图标库***********************************/
+@font-face {
+	font-family: 'iconfont';  /* project id 705561 */
+	src: url('//at.alicdn.com/t/font_705561_d2q67x47kpg.eot');
+	src: url('//at.alicdn.com/t/font_705561_d2q67x47kpg.eot?#iefix') format('embedded-opentype'),
+	url('//at.alicdn.com/t/font_705561_d2q67x47kpg.woff') format('woff'),
+	url('//at.alicdn.com/t/font_705561_d2q67x47kpg.ttf') format('truetype'),
+	url('//at.alicdn.com/t/font_705561_d2q67x47kpg.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family:"iconfont" !important;
+	font-size:16px;font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;}
+/*******************************清除浮动代码***********************************/
+.clearfloat:before,.clearfloat:after {
+	display:block;
+	clear:both;
+	content:"";
+	visibility:hidden;
+	height:0
+}
+.clearfloat {
+	zoom:1
+}
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
 
-    >span{
-        display: inline-block;
-        height: 40px;
-        line-height: 2.2rem;
-        width: 50%;
-        text-align: center;
-        border-radius: 2px;
-        color: white;
-        font-weight: 500;
-    }
-    >span:nth-child(1){
-        background: linear-gradient(to top,#50b4f9, #77c5fb);
-    }
-    >span:nth-child(2){
-        background: linear-gradient(to top,#c8e8fe, #c8e8fe);
-        color:black;
+.main {
+    height: calc(100% - 100px);
+    width: 100%;
+    max-width: 678px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+}
+
+.main {
+    width: 100%;
+    padding: 10px 15px 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+}
+
+.btn1, .btn2 {
+    font-size: 14px;
+    width: 50%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #5ab8f9;
+    color: #fff;
+}
+
+.btn1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn2 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #000;
+    background-color: #c7e7fd;
+}
+
+.ranklist {
+    height: calc(100% - 35px);
+    overflow-y: auto;
+}
+
+.rank-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rank-item {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.num .top {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 14px;
+    color: #c1c1c1;
+}
+.top1,.top2,.top3{
+    background:  url(../../images/ranks/top1.png) center center no-repeat;
+    background-size: 90%;
+    color: #fff!important;
+}
+.top2{
+    background:  url(../../images/ranks/top2.png) center center no-repeat;
+    background-size: 90%;
+}
+.top3{
+    background:  url(../../images/ranks/top3.png) center center no-repeat;
+    background-size: 90%;
+}
+.rank-img {
+    margin-left: 10px;
+}
+.rank-img img {
+    width: 35px;
+margin-top: 5px;
+}
+
+.rank-info {
+    margin-left: 20px;
+}
+
+.rank-info p {
+    color: #6e6e6e;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.rank-info span {
+    color: #acacac;
+    font-size: 12px;
+}
+
+.rank-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rank-right .number span {
+    color: #5eb9f9;
+    font-family: '微软雅黑';
+    margin-right: 5px;
+}
+
+.number {
+    margin-bottom: 5px;
+}
+
+.rank-right > p {
+    color: #a2a2a2;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: #cccc77;
+}
+// .rankContainer{
+//     padding: 5px;
+
+// }
+// .rankTabs{
+//      margin-top: 10px;
+
+//     >span{
+//         display: inline-block;
+//         height: 40px;
+//         line-height: 2.2rem;
+//         width: 50%;
+//         text-align: center;
+//         border-radius: 2px;
+//         color: white;
+//         font-weight: 500;
+//     }
+//     >span:nth-child(1){
+//         background: linear-gradient(to top,#50b4f9, #77c5fb);
+//     }
+//     >span:nth-child(2){
+//         background: linear-gradient(to top,#c8e8fe, #c8e8fe);
+//         color:black;
 
         
-    }
-}
+//     }
+// }
 
-.rankUL {
-    >li{
-        padding :   15px 0  ;
-        border-bottom: 1px solid #ccc;
-        >span{
-            display: inline-block;
-        }
-        >span:nth-child(1){
-            width: 12%;
-            text-align: center;
-        }
-        >span:nth-child(2){
+// .rankUL {
+//     >li{
+//         padding :   15px 0  ;
+//         border-bottom: 1px solid #ccc;
+//         >span{
+//             display: inline-block;
+//         }
+//         >span:nth-child(1){
+//             width: 12%;
+//             text-align: center;
+//         }
+//         >span:nth-child(2){
             
-        }
-        >span:nth-child(3){
-            margin-left: 10px;
-            width: 12%;
-            text-align: center;
-            >p:nth-child(2){
-                font-size: 0.1rem;
-            }
-        }
-        >span:nth-child(4){
-            float: right;
-            >p:nth-child(1){
-                >span:nth-child(1){
-                    color: #5ebafa;
-                }   
-                >span:nth-child(2){
-                    font-size: 0.1rem;
-                }
-            }
-            >p:nth-child(2){
-                font-size: 0.1rem;
-            }
-        }
-    }
-}
+//         }
+//         >span:nth-child(3){
+//             margin-left: 10px;
+//             width: 12%;
+//             text-align: center;
+//             >p:nth-child(2){
+//                 font-size: 0.1rem;
+//             }
+//         }
+//         >span:nth-child(4){
+//             float: right;
+//             >p:nth-child(1){
+//                 >span:nth-child(1){
+//                     color: #5ebafa;
+//                 }   
+//                 >span:nth-child(2){
+//                     font-size: 0.1rem;
+//                 }
+//             }
+//             >p:nth-child(2){
+//                 font-size: 0.1rem;
+//             }
+//         }
+//     }
+// }
