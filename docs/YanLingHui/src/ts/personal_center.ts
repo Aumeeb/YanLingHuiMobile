@@ -6,6 +6,4 @@ class Tem extends Template{
         this.render(null,this.homeTab())
     }
 };
-
-
 new Tem()

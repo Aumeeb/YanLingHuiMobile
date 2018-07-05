@@ -1,56 +1,196 @@
 @import 'common';@import "common";
 
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
 
-.regTitleRow{
+.main {
+    height: calc(100% - 100px);
+    width: 100%;
+    max-width: 678px;
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+}
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: #cccc77;
+}
+.test-item {
+    height: 60px;
+    line-height: 40px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+.name>span>i {
+    padding: 0 10px 0 10px;
+    color: red;
+}
+.input-name input{
+    border: none;
+    outline: none;
+    width: 195px;
+    text-align: right;
+}
+
+.input-name input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #bebebe;
+}
+.right {
+    color: #bebebe;
+    margin-right: 10px;
+}
+.test-content {
+    width: 100%;
+    height: 300px;
+    outline: none;
+}
+.public {
+    display: block;
+    width: 320px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #50b3f8;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend {
+	margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-family: inherit; font-size:100%; text-align: left; vertical-align: baseline;
+}
+img {
+	border:none;
+}
+body, p, td, th, li {
+	font-family: Arial, Helvetica, sans-serif; font-size:12px;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+ol,ul {
+	list-style: none;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.fs12 {
+	font-size: 12px;
+}
+.fs14 {
+	font-size: 14px;
+}
+.fs14 {
+	font-size: 14px;
+}
+.fs16 {
+	font-size: 16px;
+}
+.fs18 {
+	font-size: 18px;
+}
+.textLeft {
+	text-align: left;
+}
+.textCenter {
+	text-align: center ;
+}
+.textRight {
+	text-align: right;
+}
+
+/*******************************图标库***********************************/
+// @font-face {
+// 	font-family: 'iconfont';  /* project id 705561 */
+// 	src: url('//at.alicdn.com/t/font_705561_6rbbe2slvfw.eot');
+// 	src: url('//at.alicdn.com/t/font_705561_6rbbe2slvfw.eot?#iefix') format('embedded-opentype'),
+// 	url('//at.alicdn.com/t/font_705561_6rbbe2slvfw.woff') format('woff'),
+// 	url('//at.alicdn.com/t/font_705561_6rbbe2slvfw.ttf') format('truetype'),
+// 	url('//at.alicdn.com/t/font_705561_6rbbe2slvfw.svg#iconfont') format('svg');
+// }
+
+.iconfont{
+	font-family:"iconfont" !important;
+	font-size:20px;font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;}
+/*******************************清除浮动代码***********************************/
+.clearfloat:before,.clearfloat:after {
+	display:block;
+	clear:both;
+	content:"";
+	visibility:hidden;
+	height:0
+}
+.clearfloat {
+	zoom:1
+}
+
+// .regTitleRow{
     
-    height:30px;
-    background-color: $headerBackgroundColor;
-    font-size: 0.725Rem;
-    color: $headerTitleSpanColor;
-    padding-left: 20px;
-    line-height: 1.725rem;
-}
+//     height:30px;
+//     background-color: $headerBackgroundColor;
+//     font-size: 0.725Rem;
+//     color: $headerTitleSpanColor;
+//     padding-left: 20px;
+//     line-height: 1.725rem;
+// }
 
-.regInputRow{
-    >div{
-        height: 70px;
-        border: 0;
-        border-bottom: 1px solid #d3d3d3;
+// .regInputRow{
+//     >div{
+//         height: 70px;
+//         border: 0;
+//         border-bottom: 1px solid #d3d3d3;
         
-         >span{
-            font-size: 1.1rem;     
-            color:$lightGray;
-            position: relative;
-            top: 1.5rem;
-            left: 1rem;
-            display: inline-block;
-            width: 90px;
-            >input{
-                font-size: 1.0rem;    
-                position: relative; 
-                //  width: 100% - $indentMargin * 2 - 4%;
-                 height: 30px;
-                 border: 0;             
-                 &:focus{
-                     outline: none;
-                 }
-                }
-         }
-         >span:nth-child(1){
-             width: 10px !important;
-             color: red;
-         }
+//          >span{
+//             font-size: 1.1rem;     
+//             color:$lightGray;
+//             position: relative;
+//             top: 1.5rem;
+//             left: 1rem;
+//             display: inline-block;
+//             width: 90px;
+//             >input{
+//                 font-size: 1.0rem;    
+//                 position: relative; 
+//                 //  width: 100% - $indentMargin * 2 - 4%;
+//                  height: 30px;
+//                  border: 0;             
+//                  &:focus{
+//                      outline: none;
+//                  }
+//                 }
+//          }
+//          >span:nth-child(1){
+//              width: 10px !important;
+//              color: red;
+//          }
 
-    }
-}
+//     }
+// }
 
 
-.regButtonWrap{
-    text-align: center;
-}
-.regButton{
-    @include defualtButton;
-    width: 90%;
-    margin-top: 50px;
-    // margin: 0 8%;
-}
+// .regButtonWrap{
+//     text-align: center;
+// }
+// .regButton{
+//     @include defualtButton;
+//     width: 90%;
+//     margin-top: 50px;
+//     // margin: 0 8%;
+// }

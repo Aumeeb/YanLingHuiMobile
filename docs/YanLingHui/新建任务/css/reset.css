@@ -1,0 +1,74 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend {
+	margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-family: inherit; font-size:100%; text-align: left; vertical-align: baseline;
+}
+img {
+	border:none;
+}
+body, p, td, th, li {
+	font-family: Arial, Helvetica, sans-serif; font-size:12px;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+ol,ul {
+	list-style: none;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.fs12 {
+	font-size: 12px;
+}
+.fs14 {
+	font-size: 14px;
+}
+.fs14 {
+	font-size: 14px;
+}
+.fs16 {
+	font-size: 16px;
+}
+.fs18 {
+	font-size: 18px;
+}
+.textLeft {
+	text-align: left;
+}
+.textCenter {
+	text-align: center ;
+}
+.textRight {
+	text-align: right;
+}
+/*******************************图标库***********************************/
+@font-face {
+	font-family: 'iconfont';  /* project id 705561 */
+	src: url('//at.alicdn.com/t/font_705561_6rbbe2slvfw.eot');
+	src: url('//at.alicdn.com/t/font_705561_6rbbe2slvfw.eot?#iefix') format('embedded-opentype'),
+	url('//at.alicdn.com/t/font_705561_6rbbe2slvfw.woff') format('woff'),
+	url('//at.alicdn.com/t/font_705561_6rbbe2slvfw.ttf') format('truetype'),
+	url('//at.alicdn.com/t/font_705561_6rbbe2slvfw.svg#iconfont') format('svg');
+}
+
+.iconfont{
+	font-family:"iconfont" !important;
+	font-size:16px;font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;}
+/*******************************万能清除浮动代码***********************************/
+.clearfloat:before,.clearfloat:after {
+	display:block;
+	clear:both;
+	content:"";
+	visibility:hidden;
+	height:0
+}
+.clearfloat {
+	zoom:1
+}
