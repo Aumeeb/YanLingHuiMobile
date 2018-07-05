@@ -38,7 +38,7 @@ export class Template {
         }
         header
         /**
-         *  after HTML document get ready then injection footer contents inside...
+         *  after HTML document get ready then inject both contents of header & footer inside...
          */
         public render(header?: string | null | undefined, footer?: string): void {
                 $(() => {
