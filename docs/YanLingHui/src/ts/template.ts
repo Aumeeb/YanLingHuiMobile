@@ -4,8 +4,10 @@ interface HeaderParam {
         url: string
         title: string | any
 }
+type NullableString = string | null | undefined;
 
 export class Template {
+        protected static title;
         constructor() { }
 
         public homeTab(): string {
@@ -36,11 +38,18 @@ export class Template {
                 </header>
                 `
         }
+        public headerNoUrl(title:string){
+                return `
+                <header class="header1">
+                <span>${title}</span>
+                </header>
+                `
+        }
         header
         /**
-         *  after HTML document get ready then injection footer contents inside...
+         *  after HTML document get ready then inject both contents of header & footer inside...
          */
-        public render(header?: string | null | undefined, footer?: string): void {
+        public render(header?: NullableString, footer?: NullableString): void {
                 $(() => {
                         const body = $("body");
                         if (body != undefined) {

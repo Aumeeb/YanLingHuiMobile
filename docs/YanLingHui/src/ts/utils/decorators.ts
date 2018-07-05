@@ -10,7 +10,6 @@ export const Component = (inventory: Inventory) => {
           return target => {
                     let head = document.getElementsByTagName('head')[0];
 
-
                     inventory.styleUrls.forEach(cssUrl => {
                               let link = document.createElement('link');
                               link.type = 'text/css';

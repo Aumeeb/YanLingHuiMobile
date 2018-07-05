@@ -4,7 +4,6 @@ import { Header } from "./utils/decorators";
 @Header("排行榜")
 class Rank extends Template {
     htmlTitle: string;
-    static title: string;
 
     constructor() {
         super();
