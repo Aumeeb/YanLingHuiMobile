@@ -1,5 +1,5 @@
 
-import { Template, ROUTER, } from "./template";
+import { Template } from "./template";
 import { Component, Header } from "./utils/decorators";
 
 @Component({ styleUrls: ["./css/expert.css"] })
