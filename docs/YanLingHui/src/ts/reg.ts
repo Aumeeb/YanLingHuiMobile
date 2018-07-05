@@ -3,17 +3,12 @@ import { Template, ROUTER } from "./template";
 import { Component } from "./utils/decorators";
 
 
-@Component({styleUrls:["./css/reg.css"]})
-class Reg extends Template  implements Page {
-    htmlTitle: string;
-    title: string;
+@Component({ styleUrls: ["./css/reg.css"] })
+class Reg extends Template {
     constructor() {
         super();
-        this.title = "帐号注册";
-        this.htmlTitle = this.title;
-        this.render(this.headerWithUrl({ title: this.title, url: ROUTER.ROOT }));
-        this.setTitle(this.htmlTitle);
+        this.render(this.headerWithUrl({ title: "帐号注册", url: ROUTER.ROOT }));
     }
-    
+
 }
-new Reg();
+new Reg;

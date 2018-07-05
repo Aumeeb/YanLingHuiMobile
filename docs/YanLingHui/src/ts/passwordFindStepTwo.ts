@@ -7,8 +7,6 @@ import { Header } from "./utils/decorators";
 @Header("确认帐号")
 class PassWordFindStepTwo extends Template {
     htmlTitle: string;
-    static title: string
-
     constructor() {
         super();
 
