@@ -15,6 +15,9 @@ ul {
 a {
   text-decoration: white; }
 
+html, body {
+  font-size: 16px; }
+
 .header1 {
   height: 50px;
   background-color: #50b4f9;
@@ -22,6 +25,8 @@ a {
   color: white;
   font-size: 1.2rem;
   line-height: 3rem; }
+  .header1 span {
+    font-size: 1.2rem; }
   .header1 > a {
     color: white;
     position: absolute;
@@ -34,6 +39,22 @@ a {
 
 .pContainer {
   padding: 0 6%; }
+
+body {
+  max-width: 768px;
+  margin: 0 auto;
+  position: relative; }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.column {
+  flex-direction: column; }
+
+.container-fluied {
+  width: 100%; }
 
 /**
 主题色卡
@@ -51,6 +72,9 @@ ul {
 a {
   text-decoration: white; }
 
+html, body {
+  font-size: 16px; }
+
 .header1 {
   height: 50px;
   background-color: #50b4f9;
@@ -58,6 +82,8 @@ a {
   color: white;
   font-size: 1.2rem;
   line-height: 3rem; }
+  .header1 span {
+    font-size: 1.2rem; }
   .header1 > a {
     color: white;
     position: absolute;
@@ -70,6 +96,22 @@ a {
 
 .pContainer {
   padding: 0 6%; }
+
+body {
+  max-width: 768px;
+  margin: 0 auto;
+  position: relative; }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.column {
+  flex-direction: column; }
+
+.container-fluied {
+  width: 100%; }
 
 .regTitleRow {
   height: 30px;

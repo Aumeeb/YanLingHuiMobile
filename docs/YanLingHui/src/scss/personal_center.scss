@@ -1,1 +1,97 @@
-@import  "common.scss";
+@import "common.scss";
+@import "index";
+$icon_url:"../../images/personal_center/";
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.container-fluied.personal_center{
+    height: calc(100% - 100px);
+    .personal_photo {
+        justify-content: center;
+        height: 30%;
+        background: linear-gradient(to bottom, #6e87d6, #50c7ee);
+        span {
+            color: #fff;
+            font-size: $normalFontSize;
+        }
+        .profile_photo {
+            margin-bottom: 10px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 1px solid #4088b7;
+            background: url("../../images/personal_center/profile_photo.png") no-repeat center/100%;
+        }
+    }
+    .task {
+        height: 71%;
+        background-color: $headerBackgroundColor;
+        >div {
+            background-color: #fff;
+            &:nth-child(1) {
+                height: 25%;
+                margin-bottom: 10px;
+                >div {
+                    @each $i,
+                    $img in (1,
+                    $icon_url+"my_task.png"),
+                    (2,
+                    $icon_url+"my_count.png"),
+                    (3,
+                    $icon_url+"msg.png"),
+                    (4,
+                    $icon_url+"manage_count.png") {
+                        &:nth-child(#{$i}) i{
+                            background:url(#{$img}) no-repeat center/100%;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                height: 50%;
+                >div {
+                    @each $i,
+                    $img in (1,
+                    $icon_url+"task_list.png"),
+                    (2,
+                    $icon_url+"count.png"),
+                    (3,
+                    $icon_url+"manage_doc.png"),
+                    (4,
+                    $icon_url+"manage_hosipital.png"),
+                    (5,
+                    $icon_url+"department.png"),
+                    (6,
+                    $icon_url+"usage.png") {
+                        &:nth-child(#{$i}) i{
+                            background:url(#{$img}) no-repeat center/100%;
+                        }
+                    }
+                }
+            }
+            >div {
+                width: 25%;
+                >span {
+                    margin-top: 10px;
+                    color: $titleFontColor;
+                }
+            }
+        }
+        i {
+            width: 30px;
+            height: 30px;
+            display: block;
+        }
+    }
+}
