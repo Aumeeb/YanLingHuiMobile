@@ -1,8 +1,11 @@
-import {Template} from "./template"
-class Tab extends Template{
-  constructor(){
+import { Template } from "./template"
+import { Component } from "./utils/decorators";
+
+//  @Component({styleUrls:["./css/index.css","./css/swiper.min.css"]})
+class Tab extends Template {
+  constructor() {
     super();
-    this.render(null,this.homeTab());
+    this.render(null, this.homeTab());
   }
 };
 new Tab();

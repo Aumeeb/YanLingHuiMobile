@@ -1,9 +1,10 @@
 
-import { Template, ROUTER, header } from "./template";
+import { Template, ROUTER } from "./template";
 import { navigateTo } from "./tools";
+import { Header } from "./utils/decorators";
 
  
- @header("确认帐号")
+ @Header("确认帐号")
 class PassWordFindStepOne extends Template   {
     htmlTitle: string;
     static title: string;

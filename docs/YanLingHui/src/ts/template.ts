@@ -4,9 +4,7 @@ interface HeaderParam {
         url: string
         title: string | any
 }
-export const header = function (title: string) {
-        return target => { target.title = title }
-}
+
 export class Template {
         constructor() { }
 

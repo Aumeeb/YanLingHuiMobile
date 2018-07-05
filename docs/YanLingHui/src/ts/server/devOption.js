@@ -17,7 +17,7 @@ exports.Router = {
     "expert": "./YanLingHui/src/ts/expert.ts",
     "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
     "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts",
-    "personal_center":"./YanLingHui/src/ts/personal_center.ts"
+    "personal_center":"./YanLingHui/src/ts/personal_center.ts，
 };
 function relativeRoute(routes) {
     var array = [];

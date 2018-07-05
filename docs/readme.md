@@ -9,10 +9,24 @@
 使用TypeScript开发
 1) npm install typescript -g 
 2) npm link typescript
-3) npm run webpack (自动编译ts文件到  YangLingHui/scr/js ) 参考profile.ts & profile.html
+3) npm run webpack (自动编译ts文件到  YangLingHui/scr/js ) 参考reg.ts & reg.html
 
 
-# 💎Notice!💎
+# 💎Notice💎
+
+😀直接导入样式,无需在HTML页面中导入 😀
+```typescript
+@Component({styleUrls:["./css/reg.css","./css/bula bula...css"]})
+class Reg extends Template  implements Page {
+    htmlTitle: string;
+    title: string;
+    constructor() {}
+}
+new Reg;
+```
+
+ 
+
 
 
 # authors                  roles
@@ -34,6 +48,6 @@ docs/YanLingHui/UX design
 ## password_center                     👉🏽  ??                     0%❤️
 ## rank.html         
 
-
+## 帐号管理,个人中心,新建任务,排行榜  👉🏽  产百海   20%💛️ 
 
 

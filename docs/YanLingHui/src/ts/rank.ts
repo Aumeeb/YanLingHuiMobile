@@ -1,6 +1,7 @@
-import { Template, ROUTER, header } from "./template";
+import { Template, ROUTER } from "./template";
+import { Header } from "./utils/decorators";
 
-@header("排行榜")
+@Header("排行榜")
 class Rank extends Template {
     htmlTitle: string;
     static title: string;

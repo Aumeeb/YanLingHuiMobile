@@ -34,9 +34,11 @@ export const Router = {
     "newTask": "./YanLingHui/src/ts/newTask.ts",
     "expert": "./YanLingHui/src/ts/expert.ts",
     "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
-    "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts"
+    "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts",
 
-    
+    // "./server/devOption": "./YanLingHui/src/ts/server/devOption.ts",   //服务器内容不打包
+
+
 }
 export function relativeRoute(routes: Route[]) {
     var array = [];
