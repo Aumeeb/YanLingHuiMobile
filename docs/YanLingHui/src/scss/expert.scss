@@ -1,14 +1,15 @@
 @import "common";
 
 body{
-    color: #F4F4F4;
+    background-color: #F4F4F4;
 }
 .expertSearch{
+    background: white;
     height: 100px;
     padding: 0 5% ;
+    padding-top: 15px;
     margin: {
-        top: 20px;
-        bottom: 20px;
+        bottom: -48px;
     }
     input{
         box-sizing: border-box;
@@ -24,5 +25,95 @@ body{
         position: relative;
         top: -30px;
         left: 20px;
+    }
+}
+
+.expertCategroy{
+    height: 40px;;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    >span{
+        text-align: center;
+        width: 33%;
+        color: black;
+        line-height: 30px;
+       
+    }
+    
+}
+
+.expertList{
+    padding-top: 10px;
+    margin: 0 5%;
+    
+    
+    li{
+        border-radius: 4px;
+        margin-top: 20px;
+        background: white;
+        >div{
+            background-image: url("../../images/expert/medal.png");
+            background-repeat: no-repeat;
+            background-size: 10%;
+            
+            >aside{            
+                
+                display: inline-block;
+                width: 20%;
+                >img{
+                    border-radius: 50%;
+                 }
+                position: relative;
+                left: 6%;
+                top: 12px;
+            }
+            >article{
+                position: relative;
+                left: 8%;
+                width:64%;
+                display: inline-block;
+                >div:nth-child(1){
+                  
+                    >span:nth-child(1){
+                        font-size: 1rem;
+                        margin-right: 10px;
+                    }
+                    >span:nth-child(2){
+                        font-size: 0.8rem;
+                        margin-right: 10px;
+                    }
+                    >span:nth-child(3){
+                        font-size: 0.8rem;
+                        margin-right: 10px;
+                    }
+                }
+                >div:nth-child(2){ 
+                    display: flex;
+                    justify-content: space-between;
+                    >span:nth-child(1){
+                       
+                        font-size: 0.8rem;
+                        color: #b78b64;
+                    }
+                    >span:nth-child(2){
+                     
+                        color: #50b4f9;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            >footer{
+                border-top: 1px solid gray;
+                line-height: 30px;
+                margin-top: 20px;
+                font-size: 0.8rem;
+                line-height: 1rem;
+                padding: 6px 2%;
+                
+                
+            }
+       
+        }
     }
 }
