@@ -4,6 +4,7 @@ interface HeaderParam {
         url: string
         title: string | any
 }
+type NullableString = string | null | undefined;
 
 export class Template {
         constructor() { }
@@ -40,7 +41,7 @@ export class Template {
         /**
          *  after HTML document get ready then inject both contents of header & footer inside...
          */
-        public render(header?: string | null | undefined, footer?: string): void {
+        public render(header?: NullableString, footer?: NullableString): void {
                 $(() => {
                         const body = $("body");
                         if (body != undefined) {
