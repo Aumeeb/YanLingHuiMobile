@@ -7,6 +7,7 @@ interface HeaderParam {
 type NullableString = string | null | undefined;
 
 export class Template {
+        protected static title;
         constructor() { }
 
         public homeTab(): string {
@@ -34,6 +35,13 @@ export class Template {
                 <header class="header1">
                 <a id="pageBack" href="${obj.url}"><</a>
                 <span>${obj.title}</span>
+                </header>
+                `
+        }
+        public headerNoUrl(title:string){
+                return `
+                <header class="header1">
+                <span>${title}</span>
                 </header>
                 `
         }
