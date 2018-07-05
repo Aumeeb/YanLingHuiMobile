@@ -6,13 +6,13 @@ interface HeaderParam {
 }
 type NullableString = string | null | undefined;
 
-export class Template {
+export class Template { 
         protected static title;
         constructor() { }
 
         public homeTab(): string {
                 return `
-                <footer class="container-fluied flex">
+                <footer class="container-fluied flex indexFooter">
                 <div class="tab active"><a href="${ROUTER.index}" class="flex column"><i class="tabIcon"></i>首页</a></div>
                 <div class="tab"><a href="${ROUTER.quest}" class="flex column"><i class="tabIcon"></i>任务大厅</a></div>
                 <div class="tab"><a href="${ROUTER.expert}" class="flex column"><i class="tabIcon"></i>名医汇</a></div>

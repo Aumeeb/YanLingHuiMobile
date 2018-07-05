@@ -1,6 +1,6 @@
 $title: #484848;
 $gray:#e5e5e5;
-$theme:#50b4f9;
+$theme:#4182ad;
 $url:"../../images/index-icon/";
 .tabIcon{
   img{
@@ -41,7 +41,7 @@ body{
   overflow: auto;
 }
 /**footer**/
-footer {
+footer.indexFooter{
   position: absolute;
   max-width: 768px;
   bottom: 0;
@@ -80,7 +80,7 @@ footer {
 /**footer**/
 
 /****header and slider***/
-header {
+header.indexHeader{
   height: 50px;
   background-color: #50b4f9;
   color: #fff;
