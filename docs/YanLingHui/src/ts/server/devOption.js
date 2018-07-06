@@ -22,6 +22,8 @@ exports.Router = {
     "personal_center":"./YanLingHui/src/ts/personal_center.ts",
     "manage_account":"./YanLingHui/src/ts/manage_account.ts",
     "quest":"./YanLingHui/src/ts/quest.ts",
+    "task_details":"./YanLingHui/src/ts/task_details.ts",
+    
 };
 function relativeRoute(routes) {
     var array = [];
