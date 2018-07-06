@@ -1,10 +1,15 @@
 import * as $ from "jquery";
+/** header 组件参数 */
 interface HeaderParam {
         url: string
         title: string | any
 }
-export type NullableString = string | null | undefined;
+
+/**可为空或未定义的字符串 */
+export type NullableString = string | null | undefined;  
+/**tab 组件的跳转参数选项 */
 export type tabItem = "index"|"quest"|"expert"|"rank"|"personalCenter";
+/**存放通用模板和模板方法的抽象类 */
 export abstract class Template { 
         protected static title;
         public homeTab(which:tabItem): string {
@@ -17,8 +22,8 @@ export abstract class Template {
                 <div class="tab ${which === "personalCenter"?"active":""}"><a href="${ROUTER.personalCenter}" class="flex column"><i class="tabIcon"></i>我</a></div>
             </footer>
                        `
-        };
-        /** 用于带有 返回导航的 头部标签 */
+        };      
+        /** 用于带有返回导航的头部标签模板 */
         public headerWithUrl(obj: HeaderParam): string {
                 return `
                 <header class="header1">
@@ -27,6 +32,7 @@ export abstract class Template {
                 </header>
                 `
         }
+         /** 用于没有返回导航的头部标签模板 */
         public headerNoUrl(title:string){
                 return `
                 <header class="header1">
@@ -34,9 +40,7 @@ export abstract class Template {
                 </header>
                 `
         }
-        /**
-         *  after HTML document get ready then inject both contents of header & footer inside...
-         */
+        /**after HTML document get ready then inject both contents of header & footer inside...*/
         public render(header?: NullableString, footer?: NullableString): void {
                 $(() => {
                         const body = $("body");
@@ -50,10 +54,12 @@ export abstract class Template {
 
                 })
         }
+        /**设置html标题 */
         public setTitle(title: string): void {
                 $(() => { $("title").html(title) })
         }
 }
+/** 路由的跳转页面 */
 export const ROUTER = {
         ROOT: "../",
         /**首页 */

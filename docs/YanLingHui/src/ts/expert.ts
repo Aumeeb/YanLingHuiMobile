@@ -1,4 +1,3 @@
-
 import * as $ from "jquery";
 import { Template, ROUTER } from "./template";
 import { Component, Header } from "./utils/decorators";

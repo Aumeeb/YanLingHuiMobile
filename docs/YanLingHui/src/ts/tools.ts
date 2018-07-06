@@ -6,11 +6,11 @@ import { NullableString } from "./template";
 export function hello(str: string) {
         alert(str);
 }
+/**HTML页面跳转 */
 export function navigateTo(url: string): void;
 export function navigateTo(id: string, url?: NullableString): void
 export function navigateTo(id: string, url?: NullableString): void {
         $(() => {
-
                 if (id && url) {
                         $(`#${id}`).click(() => {
                                 location.href = url;
@@ -21,7 +21,7 @@ export function navigateTo(id: string, url?: NullableString): void {
         })
 }
 
-/**delete Any HTMLElement you want by ID */
+/**delete any HTML Element by Id what you want  */
 export function remove(eleID: string) {
         $(() => { $(`#${eleID}`).remove(); })
 }
