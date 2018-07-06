@@ -9,7 +9,7 @@ import { navigateTo } from "./tools";
 class Expert extends Template {
     constructor() {
         super();
-        this.render(this.headerNoUrl(Expert.title), this.homeTab());
+        this.render(this.headerNoUrl(Expert.title), this.homeTab("3"));
         this.changeCategoryFontColor();
     }
     private changeCategoryFontColor() {

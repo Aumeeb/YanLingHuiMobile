@@ -5,7 +5,7 @@ import { Component } from "./utils/decorators";
 class Tab extends Template {
   constructor() {
     super();
-    this.render(null, this.homeTab());
+    this.render(null, this.homeTab("1"));
   }
 };
 new Tab();
