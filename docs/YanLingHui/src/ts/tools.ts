@@ -10,12 +10,13 @@ export function navigateTo(url: string): void;
 export function navigateTo(id: string, url?: NullableString): void
 export function navigateTo(id: string, url?: NullableString): void {
         $(() => {
+
                 if (id && url) {
                         $(`#${id}`).click(() => {
                                 location.href = url;
                         })
                 } else {
-                        location.href = url;
+                        location.href = id;
                 }
         })
 }

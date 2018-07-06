@@ -73,7 +73,7 @@ export const ROUTER = {
         /**专家-名医汇 */
         expert: './expert.html',
         /**专家-搜索条件组合  可以是医院 科室 */
-        expertSearching: './experts_searching.html',
+        expertSearching: './expert_searching.html',
         /**专家介绍 */
         expertIntro: './expert_intro.html',
 
