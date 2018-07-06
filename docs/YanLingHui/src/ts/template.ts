@@ -6,23 +6,23 @@ interface HeaderParam {
 }
 
 /**可为空或未定义的字符串 */
-export type NullableString = string | null | undefined;  
+export type NullableString = string | null | undefined;
 /**tab 组件的跳转参数选项 */
-export type tabItem = "index"|"quest"|"expert"|"rank"|"personalCenter";
+export type tabItem = "index" | "quest" | "expert" | "rank" | "personalCenter";
 /**存放通用模板和模板方法的抽象类 */
-export abstract class Template { 
-        protected static title;
-        public homeTab(which:tabItem): string {
+export abstract class Template {
+        protected static title: string;
+        public homeTab(which: tabItem): string {
                 return `
                 <footer class="container-fluied flex indexFooter">
-                <div class="tab ${which === "index"?"active":""}"><a href="${ROUTER.index}" class="flex column"><i class="tabIcon"></i>首页</a></div>
-                <div class="tab ${which === "quest"?"active":""}"><a href="${ROUTER.quest}" class="flex column"><i class="tabIcon"></i>任务大厅</a></div>
-                <div class="tab ${which === "expert"?"active":""}"><a href="${ROUTER.expert}" class="flex column"><i class="tabIcon"></i>名医汇</a></div>
-                <div class="tab ${which === "rank"?"active":""}"><a href="${ROUTER.rank}" class="flex column"><i class="tabIcon"></i>排行榜</a></div>
-                <div class="tab ${which === "personalCenter"?"active":""}"><a href="${ROUTER.personalCenter}" class="flex column"><i class="tabIcon"></i>我</a></div>
+                <div class="tab ${which === "index" ? "active" : ""}"><a href="${ROUTER.index}" class="flex column"><i class="tabIcon"></i>首页</a></div>
+                <div class="tab ${which === "quest" ? "active" : ""}"><a href="${ROUTER.quest}" class="flex column"><i class="tabIcon"></i>任务大厅</a></div>
+                <div class="tab ${which === "expert" ? "active" : ""}"><a href="${ROUTER.expert}" class="flex column"><i class="tabIcon"></i>名医汇</a></div>
+                <div class="tab ${which === "rank" ? "active" : ""}"><a href="${ROUTER.rank}" class="flex column"><i class="tabIcon"></i>排行榜</a></div>
+                <div class="tab ${which === "personalCenter" ? "active" : ""}"><a href="${ROUTER.personalCenter}" class="flex column"><i class="tabIcon"></i>我</a></div>
             </footer>
                        `
-        };      
+        };
         /** 用于带有返回导航的头部标签模板 */
         public headerWithUrl(obj: HeaderParam): string {
                 return `
@@ -32,8 +32,8 @@ export abstract class Template {
                 </header>
                 `
         }
-         /** 用于没有返回导航的头部标签模板 */
-        public headerNoUrl(title:string){
+        /** 用于没有返回导航的头部标签模板 */
+        public headerNoUrl(title: string) {
                 return `
                 <header class="header1">
                 <span>${title}</span>

@@ -38,13 +38,13 @@ export const Router = {
     "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
     "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts",
 
-     
+
     // "./server/devOption": "./YanLingHui/src/ts/server/devOption.ts",   //服务器内容不打包
 
 
 }
 export function relativeRoute(routes: Route[]) {
-    var array = [];
+    var array: any[] = [];
 
     routes.forEach(item => {
         let emptyObj = Object.create(null);
