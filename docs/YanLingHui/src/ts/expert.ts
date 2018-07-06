@@ -18,8 +18,7 @@ class Expert extends Template {
                 let span = $(ev.target);
                 let tagValue = span.attr("tag");
                 span.css("color", "orange");
-                navigateTo(ROUTER.expertSearching);
-                
+                navigateTo(`${ROUTER.expertSearching}?type=${tagValue}`);
             })
         })
     }

@@ -27,11 +27,9 @@ which watch its out that do not effect to others page.
      margin: 0;
      padding: 0;
  }
-
  ul {
      list-style: none;
  }
-
  a {
      text-decoration: white;
  }
@@ -90,11 +88,11 @@ html,body{
      padding: 0 $indentMargin;
  }
 
- body {
-     max-width: 768px;
-     margin: 0 auto;
-     position: relative;
- }
+//  body {
+//      max-width: 768px;
+//      margin: 0 auto;
+//      position: relative;
+//  }
 
  .flex {
      display: flex;
