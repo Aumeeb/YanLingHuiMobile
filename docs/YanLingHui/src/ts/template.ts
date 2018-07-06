@@ -1,21 +1,20 @@
 import * as $ from "jquery";
-
 interface HeaderParam {
         url: string
         title: string | any
 }
 export type NullableString = string | null | undefined;
-
+export type tabItem = "index"|"quest"|"expert"|"rank"|"personalCenter";
 export abstract class Template { 
         protected static title;
-        public homeTab(which): string {
+        public homeTab(which:tabItem): string {
                 return `
                 <footer class="container-fluied flex indexFooter">
-                <div class="tab ${which === "1"?"active":""}"><a href="${ROUTER.index}" class="flex column"><i class="tabIcon"></i>首页</a></div>
-                <div class="tab ${which === "2"?"active":""}"><a href="${ROUTER.quest}" class="flex column"><i class="tabIcon"></i>任务大厅</a></div>
-                <div class="tab ${which === "3"?"active":""}"><a href="${ROUTER.expert}" class="flex column"><i class="tabIcon"></i>名医汇</a></div>
-                <div class="tab ${which === "4"?"active":""}"><a href="${ROUTER.rank}" class="flex column"><i class="tabIcon"></i>排行榜</a></div>
-                <div class="tab ${which === "5"?"active":""}"><a href="${ROUTER.personalCenter}" class="flex column"><i class="tabIcon"></i>我</a></div>
+                <div class="tab ${which === "index"?"active":""}"><a href="${ROUTER.index}" class="flex column"><i class="tabIcon"></i>首页</a></div>
+                <div class="tab ${which === "quest"?"active":""}"><a href="${ROUTER.quest}" class="flex column"><i class="tabIcon"></i>任务大厅</a></div>
+                <div class="tab ${which === "expert"?"active":""}"><a href="${ROUTER.expert}" class="flex column"><i class="tabIcon"></i>名医汇</a></div>
+                <div class="tab ${which === "rank"?"active":""}"><a href="${ROUTER.rank}" class="flex column"><i class="tabIcon"></i>排行榜</a></div>
+                <div class="tab ${which === "personalCenter"?"active":""}"><a href="${ROUTER.personalCenter}" class="flex column"><i class="tabIcon"></i>我</a></div>
             </footer>
                        `
         };

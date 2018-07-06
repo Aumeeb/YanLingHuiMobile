@@ -3,7 +3,7 @@ class Tem extends Template{
     constructor(){
         super();
         this.render(this.headerWithUrl({title:"个人中心",url:ROUTER.index}));
-        this.render(null,this.homeTab("5"))
+        this.render(null,this.homeTab("personalCenter"))
     }
 };
 new Tem()
