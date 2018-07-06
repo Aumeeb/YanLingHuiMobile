@@ -86,7 +86,9 @@ export const ROUTER = {
         /**帐号管理-修改信息 */
         profileModify: './profile_modify.html',
         /**个人中心 */
-        personalCenter: "./personal_center.html"
+        personalCenter: "./personal_center.html",
+        /*任务详情 */
+        task_details: "./task_details.html",
 }
 
 
