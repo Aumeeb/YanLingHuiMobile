@@ -4,12 +4,10 @@ interface HeaderParam {
         url: string
         title: string | any
 }
-type NullableString = string | null | undefined;
+export type NullableString = string | null | undefined;
 
-export class Template { 
+export abstract class Template { 
         protected static title;
-        constructor() { }
-
         public homeTab(): string {
                 return `
                 <footer class="container-fluied flex indexFooter">
@@ -45,7 +43,6 @@ export class Template {
                 </header>
                 `
         }
-        header
         /**
          *  after HTML document get ready then inject both contents of header & footer inside...
          */
