@@ -89,13 +89,6 @@ html,body{
  .pContainer {
      padding: 0 $indentMargin;
  }
-
- body {
-     max-width: 768px;
-     margin: 0 auto;
-     position: relative;
- }
-
  .flex {
      display: flex;
      justify-content: space-around;
