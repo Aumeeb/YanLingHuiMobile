@@ -8,24 +8,16 @@ export type NullableString = string | null | undefined;
 
 export abstract class Template { 
         protected static title;
-        public homeTab(): string {
+        public homeTab(which): string {
                 return `
                 <footer class="container-fluied flex indexFooter">
-                <div class="tab active"><a href="${ROUTER.index}" class="flex column"><i class="tabIcon"></i>首页</a></div>
-                <div class="tab"><a href="${ROUTER.quest}" class="flex column"><i class="tabIcon"></i>任务大厅</a></div>
-                <div class="tab"><a href="${ROUTER.expert}" class="flex column"><i class="tabIcon"></i>名医汇</a></div>
-                <div class="tab"><a href="${ROUTER.rank}" class="flex column"><i class="tabIcon"></i>排行榜</a></div>
-                <div class="tab"><a href="${ROUTER.personalCenter}" class="flex column"><i class="tabIcon"></i>我</a></div>
+                <div class="tab ${which === "1"?"active":""}"><a href="${ROUTER.index}" class="flex column"><i class="tabIcon"></i>首页</a></div>
+                <div class="tab ${which === "2"?"active":""}"><a href="${ROUTER.quest}" class="flex column"><i class="tabIcon"></i>任务大厅</a></div>
+                <div class="tab ${which === "3"?"active":""}"><a href="${ROUTER.expert}" class="flex column"><i class="tabIcon"></i>名医汇</a></div>
+                <div class="tab ${which === "4"?"active":""}"><a href="${ROUTER.rank}" class="flex column"><i class="tabIcon"></i>排行榜</a></div>
+                <div class="tab ${which === "5"?"active":""}"><a href="${ROUTER.personalCenter}" class="flex column"><i class="tabIcon"></i>我</a></div>
             </footer>
                        `
-        };
-        private tabClick(): void {
-                $(() => {
-                        //底部状态切换
-                        $(".tab").click(function () {
-                                $(this).addClass("active").siblings().removeClass("active")
-                        })
-                })
         };
         /** 用于带有 返回导航的 头部标签 */
         public headerWithUrl(obj: HeaderParam): string {
@@ -54,7 +46,6 @@ export abstract class Template {
                                         $(header).insertBefore(body.children().first());
                                 if (footer) {
                                         $(footer).insertAfter(body.children().last());   //no footer
-                                        this.tabClick();
                                 }
                         }
 
