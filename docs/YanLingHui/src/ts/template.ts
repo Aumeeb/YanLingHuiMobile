@@ -18,7 +18,7 @@ export abstract class Template {
             </footer>
                        `
         };
-        /** 用于带有 返回导航的 头部标签 */
+        /** 用于带有返回导航的头部标签模板 */
         public headerWithUrl(obj: HeaderParam): string {
                 return `
                 <header class="header1">
@@ -27,6 +27,7 @@ export abstract class Template {
                 </header>
                 `
         }
+         /** 用于没有返回导航的头部标签模板 */
         public headerNoUrl(title:string){
                 return `
                 <header class="header1">

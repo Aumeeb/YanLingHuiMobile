@@ -8,7 +8,9 @@
     "start": "npm run server & npm run sass ",
     "sass": "node-sass -w -r YanLingHui/src/scss -o YanLingHui/src/css",
     "server": "live-server",
-    "webpack": "webpack -w"
+    "webpack": "webpack -w",
+    "dev": "webpack -w --mode development ",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",

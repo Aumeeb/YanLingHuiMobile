@@ -4,7 +4,10 @@
 # 💎Get Started💎
 1) npm install (安装依赖包)
 2) npm run server (启动小型服务器)
-3) npm run sass  (sass自动编译)
+3) npm run sass  (启动sass自动编译)
+4) npm run dev (启动Typescript自动打包,新页面需要在 ./ts/server/devOption.js & devOption.ts & 里配置)
+
+
 
 使用TypeScript开发
 1) npm install typescript -g 
