@@ -1,15 +1,22 @@
 import * as $ from "jquery";
+import { NullableString } from "./template";
 
 /**initalize your mobile project and set defualt parameters for it.  */
 
 export function hello(str: string) {
         alert(str);
 }
-export function navigateTo(id: string, url: string) {
+export function navigateTo(url: string): void;
+export function navigateTo(id: string, url?: NullableString): void
+export function navigateTo(id: string, url?: NullableString): void {
         $(() => {
-                $(`#${id}`).click(() => {
+                if (id && url) {
+                        $(`#${id}`).click(() => {
+                                location.href = url;
+                        })
+                } else {
                         location.href = url;
-                })
+                }
         })
 }
 
@@ -17,8 +24,4 @@ export function navigateTo(id: string, url: string) {
 export function remove(eleID: string) {
         $(() => { $(`#${eleID}`).remove(); })
 }
-
-
-
-
 
