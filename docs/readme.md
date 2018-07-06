@@ -2,18 +2,14 @@
     延陵荟互助系统
 
 # 💎Get Started💎
-1) npm install (安装依赖包)
-2) npm run server (启动小型服务器)
-3) npm run sass  (启动sass自动编译)
-4) npm run dev (启动Typescript自动打包,新页面需要在 ./ts/server/devOption.js & devOption.ts & 里配置)
+1)💄 npm install (安装依赖包)
+2)💄npm run start (一键启动) 
 
-
-
-使用TypeScript开发
-1) npm install typescript -g 
-2) npm link typescript
-3) npm run webpack (自动编译ts文件到  YangLingHui/scr/js ) 参考reg.ts & reg.html
-
+# 🧠使用TypeScript开发🧠
+1) 👶🏻npm install typescript -g 
+2) 👶🏻npm link typescript
+3) 👶🏻(自动编译ts文件到  YangLingHui/scr/js ) 参考reg.ts & reg.html
+4) 👶🏻Typescript自动打包,新页面需要在 ./ts/server/devOption.js & devOption.ts & 里配置
 
 # 💎Notice💎
 
@@ -32,25 +28,14 @@ new Reg;
 
 
 
-# authors                  roles
-@🍍Noberk         Frond-end web   已完成页面数量5个<Br/>
-@🥇产百海          Frond-end web     已完成页面数量2个<Br/>
-@🏅Michelle       Frond-end web     已完成页面数量0个
+# Authors                 Roles                   Accomplishment                     Email 
+@🍍Noberk         Frond-end web     已完成页面数量5💛️      noberkli@gmail.com <Br/>
+@🥇产百海           Frond-end web     已完成页面数量7💚                                            <Br/>
+@🏅Michelle       Frond-end web     已完成页面数量0❤️
                                                                     
 # 💎设计稿目录💎
 docs/YanLingHui/UX design
 
-# 📋任务清单📋                            作者                                        进度
-## index.html                              👉🏽  产百海           100%💚
-## login.html                               👉🏽  Noberk        100% 💚 
-## reg.html                                   👉🏽  Noberk         100% 💚        
-## personal_center                        👉🏽  产百海            0%❤️
-## profile                                       👉🏽  Boberk           66%💛️ 
-## password_find_step_1             👉🏽  Noberk           100%💚   
-## password_find_step_2            👉🏽  Noberk            100%💚
-## password_center                     👉🏽  ??                     0%❤️
-## rank.html         
 
-## 帐号管理,个人中心,新建任务,排行榜  👉🏽  产百海   20%💛️ 
 
 

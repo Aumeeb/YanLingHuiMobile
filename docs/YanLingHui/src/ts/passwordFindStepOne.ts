@@ -10,7 +10,7 @@ class PassWordFindStepOne extends Template   {
     constructor() {
         super();
 
-        this.render(this.headerWithUrl({title:PassWordFindStepOne.title,url:ROUTER.ROOT}),undefined);
+        this.render(this.headerWithUrl({title:PassWordFindStepOne.title,url:ROUTER.ROOT}));
         this.setTitle(this.htmlTitle);
         navigateTo("next",ROUTER.passwordFindStepTwo);
     }
