@@ -3,7 +3,10 @@
 body{
     background-color: #F4F4F4;
 }
-
+.expertContainer{
+    height: calc(100% - 200px);
+    overflow: auto;
+}
 .expertSearch{
     background: white;
     height: 100px;
