@@ -15,6 +15,8 @@ exports.Router = {
     "rank": "./YanLingHui/src/ts/rank.ts",
     "newTask": "./YanLingHui/src/ts/newTask.ts",
     "expert": "./YanLingHui/src/ts/expert.ts",
+    "expertSearching": "./YanLingHui/src/ts/expertSearching.ts",
+    "expertIntro": "./YanLingHui/src/ts/expertIntro.ts",
     "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
     "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts",
     "personal_center":"./YanLingHui/src/ts/personal_center.ts",
