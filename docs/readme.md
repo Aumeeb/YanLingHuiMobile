@@ -4,8 +4,9 @@
 
 # 💎Get Started💎
 1)💄 npm install (安装依赖包)
-2)💄npm run start (一键启动) 
 
+2)💄npm run start (一键启动, npm i concurretly -g   ) 
+  
 
 # 🧠使用TypeScript开发🧠
 1) 👶🏻npm install typescript -g 
