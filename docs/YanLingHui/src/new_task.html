@@ -8,47 +8,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="./css/newTask.css">
-    <script src="./js/newTask.js"></script>
 </head>
 
 <body>
-        <div class="main">
-                <form class="test">
-                    <div class="test-item">
-                        <div class="name">
-                            <span class="fs16"><i>*</i>任务名称</span>
-                        </div>
-                        <div class="input-name">
-                            <input type="text" placeholder="请输入任务名称（20字以内）">
-                            <i class="iconfont right">></i>
-                        </div>
-                    </div>
-                    <div class="test-item">
-                        <div class="name">
-                            <span class="fs16"><i>*</i>任务分类</span>
-                        </div>
-                        <div class="input-name">
-                            <input type="text" placeholder="请选择任务类别">
-                            <i class="iconfont right">></i>
-                        </div>
-                    </div>
-                    <div class="test-item">
-                        <div class="name">
-                            <span class="fs16"><i>*</i>任务行业</span>
-                        </div>
-                        <div class="input-name">
-                            <input type="text" placeholder="请选择任务所属行业">
-                            <i class="iconfont right">></i>
-                        </div>
-                    </div>
-                    <div class="test-content">
-                        <div class="name">
-                            <span class="fs16"><i>*</i>任务详情</span>
-                        </div>
-                    </div>
-                    <a class="public fs16 textCenter" href="javascript:;">发布</a>
-                </form>
+    <div class="main">
+        <form class="test">
+            <div class="test-item">
+                <div class="name">
+                    <span class="fs16">
+                        <i>*</i>任务名称</span>
+                </div>
+                <div class="input-name">
+                    <input type="text" placeholder="请输入任务名称（20字以内）">
+                    <i class="iconfont right">></i>
+                </div>
             </div>
+            <div class="test-item">
+                <div class="name">
+                    <span class="fs16">
+                        <i>*</i>任务分类</span>
+                </div>
+                <div class="input-name">
+                    <input type="text" placeholder="请选择任务类别">
+                    <i class="iconfont right">></i>
+                </div>
+            </div>
+            <div class="test-item">
+                <div class="name">
+                    <span class="fs16">
+                        <i>*</i>任务行业</span>
+                </div>
+                <div class="input-name">
+                    <input type="text" placeholder="请选择任务所属行业">
+                    <i class="iconfont right">></i>
+                </div>
+            </div>
+            <div class="test-content task_content">
+                <div class="name">
+                    <span class="fs16">
+                        <i>*</i>任务详情</span>
+                </div>
+                <div class="task_dis">
+                    请描述任务详情，300字以内！
+                </div>
+                <div class="upload">
+                    <input id="upload_image" type="file" multiple accept="image/*;capture='cemera'">;
+                    <label for="upload_image"></label>
+                    <img src="" id="preview_img">
+                    <span class="upload_hint">(请上传2M以下，.gif/.png/.jpg)</span>
+                </div>
+            </div>
+
+
+
+            <buttton type="submit" class="public fs16 textCenter" href="javascript:;">发布</buttton>
+        </form>
+    </div>
 </body>
+<script src="./js/newTask.js"></script>
 
 </html>
