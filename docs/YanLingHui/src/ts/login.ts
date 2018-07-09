@@ -1,4 +1,4 @@
-import { navigateTo } from "./tools";
+import { navigateTo } from "./utils/tools";
 import { ROUTER } from "./template";
 
 

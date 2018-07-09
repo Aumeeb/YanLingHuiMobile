@@ -1,6 +1,6 @@
 
 import { Template, ROUTER } from "./template";
-import { navigateTo } from "./tools";
+import { navigateTo } from "./utils/tools";
 import { Header } from "./utils/decorators";
 
  

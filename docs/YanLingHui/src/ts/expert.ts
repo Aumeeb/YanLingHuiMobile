@@ -1,7 +1,7 @@
 import * as $ from "jquery";
 import { Template, ROUTER } from "./template";
 import { Component, Header } from "./utils/decorators";
-import { navigateTo } from "./tools";
+import { navigateTo } from "./utils/tools";
 
 @Component({ styleUrls: ["./css/expert.css", "./css/index.css"] })
 @Header("名医汇")

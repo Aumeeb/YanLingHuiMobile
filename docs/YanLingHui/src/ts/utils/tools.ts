@@ -1,5 +1,5 @@
 import * as $ from "jquery";
-import { NullableString } from "./template";
+import { NullableString } from "../template";
 
 /**initalize your mobile project and set defualt parameters for it.  */
 
@@ -26,3 +26,8 @@ export function remove(eleID: string) {
         $(() => { $(`#${eleID}`).remove(); })
 }
 
+export function GetQueryString(name): string {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+}

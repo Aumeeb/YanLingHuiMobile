@@ -1,0 +1,13 @@
+
+@import "common";
+ul{ 
+    >li{
+        padding:0 2%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+    }
+}
