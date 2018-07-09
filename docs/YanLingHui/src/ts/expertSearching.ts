@@ -19,7 +19,7 @@ class ExpertSearching extends Template {
     constructor() {
         super();
         this.render(
-            this.headerWithUrl({ title: "科室", url: ROUTER.index })
+            this.headerWithUrl({ title: "科室", url: ROUTER.expert })
         )
         this.administrativeItems = ["儿科", "妇科", "泌尿外科", "中医科", "皮肤病科", "全科"
             , "心理科", "普外科", "骨科", "心内科", "呼吸道科", "男科", "整形外科"]
@@ -35,8 +35,6 @@ class ExpertSearching extends Template {
                 this.getItem(type as Categary)
             )
         })
-
-
     }
     private getItem(categary: Categary): string[] | undefined {
         switch (categary) {
