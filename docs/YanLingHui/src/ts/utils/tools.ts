@@ -2,7 +2,9 @@ import * as $ from "jquery";
 import { NullableString } from "../template";
 
 /**initalize your mobile project and set defualt parameters for it.  */
-
+export function addEvent(selector: string, eventType: keyof DocumentEventMap, action: Action): void {
+        $(() => { $(selector).on(eventType, action); })
+}
 export function hello(str: string) {
         alert(str);
 }

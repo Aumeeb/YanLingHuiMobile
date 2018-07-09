@@ -1,0 +1,104 @@
+@import "common";
+
+$liftUp  : -76px;
+
+.expertIntroHedaer{
+    height: 50px;;
+    background: $themeBlue;
+}
+
+body{
+    background: rgb(235, 235, 235);
+}
+.expertList{
+    padding-top: 10px;
+    margin: 0 5%;
+    position: relative;
+    top: $liftUp;
+    li{
+        border-radius: 4px;
+        margin-top: 20px;
+        background: white;
+        >div{
+            background-image: url("../../images/expert/medal.png");
+            background-repeat: no-repeat;
+            background-size: 10%;
+            
+            >aside{            
+                
+                display: inline-block;
+                width: 20%;
+                >img{
+                    border-radius: 50%;
+                 }
+                position: relative;
+                left: 6%;
+                top: 12px;
+            }
+            >article{
+                position: relative;
+                left: 8%;
+                width:64%;
+                display: inline-block;
+                >div:nth-child(1){
+                  
+                    >span:nth-child(1){
+                        font-size: 1rem;
+                        margin-right: 10px;
+                    }
+                    >span:nth-child(2){
+                        font-size: 0.8rem;
+                        margin-right: 10px;
+                    }
+                    >span:nth-child(3){
+                        font-size: 0.8rem;
+                        margin-right: 10px;
+                    }
+                }
+                >div:nth-child(2){ 
+                    display: flex;
+                    justify-content: space-between;
+                    >span:nth-child(1){
+                       
+                        font-size: 0.8rem;
+                        color: #b78b64;
+                    }
+                    >span:nth-child(2){
+                     
+                        color: #50b4f9;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            >footer{
+                border-top: 1px solid gray;
+                line-height: 30px;
+                margin-top: 20px;
+                font-size: 0.8rem;
+                line-height: 1rem;
+                padding: 6px 2%;
+                
+                
+            }
+       
+        }
+    }
+}
+
+.introduction{
+    position: relative;
+    top:$liftUp+20px ;
+    background: white;
+    padding: 0 5%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    >div:nth-child(1){
+        border-bottom: 1px solid rgb(206, 199, 199);
+    }
+    >div:nth-child(2){
+        line-height: $normalFontSize;
+        font-size: $extraSmallFontSize;
+        text-indent: 26px;
+        margin-top: 6px;
+    }
+}
