@@ -4,7 +4,6 @@ interface HeaderParam {
         url: string
         title: string | any
 }
-
 /**可为空或未定义的字符串 */
 export type NullableString = string | null | undefined;
 /**tab 组件的跳转参数选项 */

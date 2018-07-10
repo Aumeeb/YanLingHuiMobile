@@ -1,6 +1,8 @@
 
 @import "common";
 ul{ 
+    height: calc(100% - 100px);
+    overflow: auto;
     >li{
         padding:0 2%;
         height: 50px;
