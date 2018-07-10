@@ -26,8 +26,7 @@ interface Route {
 
 export const Router = {
 
-    "index": "./YanLingHui/src/ts/index.ts",
-    "profile": "./YanLingHui/src/ts/profile.ts",
+    "index": "./YanLingHui/src/ts/index.ts",    
     "login": "./YanLingHui/src/ts/login.ts",
     "reg": "./YanLingHui/src/ts/reg.ts",
     "rank": "./YanLingHui/src/ts/rank.ts",

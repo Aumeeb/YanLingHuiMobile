@@ -6,7 +6,7 @@ import {  Router, RelativePath } from "./YanLingHui/src/ts/server/devOption";
 
 
 const config: webpack.Configuration = {
-    devtool: 'source-map',
+    // devtool: 'source-map',
     entry: Router,
 
     output: {

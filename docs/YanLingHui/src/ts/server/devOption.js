@@ -9,7 +9,6 @@ exports.dev = {
 exports.RelativePath = './YanLingHui/src/js';
 exports.Router = {
     "index": "./YanLingHui/src/ts/index.ts",
-    "profile": "./YanLingHui/src/ts/profile.ts",
     "login": "./YanLingHui/src/ts/login.ts",
     "reg": "./YanLingHui/src/ts/reg.ts",
     "rank": "./YanLingHui/src/ts/rank.ts",
