@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+var webpack_1 = require("webpack");
 var path = require("path");
 var devOption_1 = require("./YanLingHui/src/ts/server/devOption");
 var config = {

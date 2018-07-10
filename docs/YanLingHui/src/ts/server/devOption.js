@@ -17,12 +17,7 @@ exports.Router = {
     "expertSearching": "./YanLingHui/src/ts/expertSearching.ts",
     "expertIntro": "./YanLingHui/src/ts/expertIntro.ts",
     "passwordFindStepOne": "./YanLingHui/src/ts/passwordFindStepOne.ts",
-    "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts",
-    "personal_center":"./YanLingHui/src/ts/personal_center.ts",
-    "manage_account":"./YanLingHui/src/ts/manage_account.ts",
-    "quest":"./YanLingHui/src/ts/quest.ts",
-    "task_details":"./YanLingHui/src/ts/task_details.ts",
-    
+    "passwordFindStepTwo": "./YanLingHui/src/ts/passwordFindStepTwo.ts"
 };
 function relativeRoute(routes) {
     var array = [];

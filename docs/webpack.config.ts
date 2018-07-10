@@ -1,8 +1,6 @@
 import webpack from "webpack";
-
 import * as path from "path";
-import {  Router, RelativePath } from "./YanLingHui/src/ts/server/devOption";
-
+import { Router, RelativePath } from "./YanLingHui/src/ts/server/devOption";
 
 
 const config: webpack.Configuration = {
@@ -17,7 +15,16 @@ const config: webpack.Configuration = {
         // Add `.ts` and `.tsx` as a resolvable extension.
         extensions: ['*', '.ts', '.js']
     },
-
+    // plugins: [
+    //     new webpack.optimize.UglifyJsPlugin({
+    //         output: {
+    //             comments: false
+    //         },
+    //         compress: {
+    //             warnings: false
+    //         }
+    //     })
+    // ],
     module: {
         rules: [
             { test: /\.ts$/, loader: 'ts-loader' }
