@@ -132,7 +132,7 @@ header.indexHeader{
   flex-wrap: wrap;
   &.find-doc{
     >div{
-      height: 80px;
+      height: 60px;
       border: 1px solid $gray;
     }
   }
@@ -167,21 +167,21 @@ header.indexHeader{
   background-color: #ededed;
 }
 .hotSearch {
-  padding: 10px 0;
+  padding: 6px 0;
   background-color: #fff;
   a {
     color: #2194ff;
     font-size: 12px;
   }
   dt{
-    padding: 0  0 0 4px;
+    padding: 0  0 0 6px;
     border-left: 2px solid #ff7979;
   }
 }
 
 /***hot search**/
 .rect_gt{
-
+    margin-right: 10px;
     width: 10px;
     height: 10px;
     display: block;
