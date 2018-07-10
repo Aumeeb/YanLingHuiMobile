@@ -9,9 +9,7 @@ class ExpertIntro extends Template {
     constructor() {
         super();
         this.render(this.headerWithUrl({title:ExpertIntro.title,url:ROUTER.expert}), this.homeTab("expert"));
- 
     }
-  
 }
 new ExpertIntro;
 

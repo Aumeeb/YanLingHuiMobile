@@ -4,8 +4,7 @@
 
 # 💎Get Started💎
 1)💄 npm install (安装依赖包)
-
-2)💄npm run start (一键启动, npm i concurretly -g   ) 
+2)💄 open the file "test-develop.bat" in "scripts" folder to run 
   
 
 # 🧠使用TypeScript开发🧠
