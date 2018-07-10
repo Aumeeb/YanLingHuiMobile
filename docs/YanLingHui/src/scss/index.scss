@@ -99,23 +99,26 @@ header.indexHeader{
 .find-doc.justifyTwo{
   padding: 10px 0;
   >div{
-    &:nth-child(2) .doc-Photo{
-      background:url("../../images/index-icon/矢量智能对象.png") no-repeat center center/100% 100%;
-
-    }
-    h2{
-      color: #484848;
-    }
+    padding: 0 4px 0 20px;
+    width: 98%;
+    justify-content: flex-start;
     .doc-name{
       margin-bottom: 10px;
       color: $title;
+    }
+    .lt-icon{
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+    .doc-Dis{
+      margin-left:20px;
     }
     .doc-Detail{
       color:#a7a7a7
     }
     div.doc-Photo{
       width: 40px;
-      background:url($url + "矢量智能对象1.png") no-repeat center center/100% 100%;
+      background:url($url + "矢量智能对象.png") no-repeat center center/100% 100%;
       height: 40px;
       border-radius: 50%;
       position: static;
@@ -150,7 +153,7 @@ header.indexHeader{
     }
     margin: 2px 0;
     height: 110px;
-    width: 45%;
+    min-width: 45%;
     border-radius: 5px;
   }
 
@@ -177,6 +180,15 @@ header.indexHeader{
 }
 
 /***hot search**/
+.rect_gt{
+
+    width: 10px;
+    height: 10px;
+    display: block;
+    transform: rotate(45deg);
+    border-top:1px solid #484848;
+    border-right: 1px solid #484848;
+}
 /****honer-top****/
 .honer-top,.emergency-task-title {
   padding: 10px 10px 0 10px;
@@ -189,9 +201,50 @@ header.indexHeader{
     }
   }
 }
-
+.doc-slider{
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  .next,.pre{
+    z-index: 99999999;
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 8px);
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    span{
+      width: 10px;
+      height: 10px;
+      display: block;
+      transform: rotate(45deg);
+    }
+  }
+  .pre{
+    left:2.5%;
+    span{
+      transform: rotate(-45deg);
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;    }
+  }
+  .next{
+    right:2.5%;
+    span{
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;    }
+  }
+}
 .honer-Doc {
+  margin: 0 2.5%;
+  width: 95%;
+  transition: 1s;
+  justify-content: flex-start;
+  flex-wrap:nowrap !important;
   >div {
+    &:first-child{
+      margin-left: 0;
+    }
+    margin-left:10%;
     padding-top: 32px;
     background: url("../../images/index-icon/椭圆1拷贝.png") no-repeat  left bottom;
     background-size: 100% 100% ;
@@ -199,6 +252,30 @@ header.indexHeader{
       background: url("../../images/index-icon/doc-1.png")no-repeat center center/100% 100%;
     }
     &:nth-child(2) .doc-Photo{
+      background: url("../../images/index-icon/doc-2.png")no-repeat center center/100% 100%;
+    }
+    &:nth-child(3) .doc-Photo{
+      background: url("../../images/index-icon/doc-2.png")no-repeat center center/100% 100%;
+    }
+    &:nth-child(4) .doc-Photo{
+      background: url("../../images/index-icon/doc-2.png")no-repeat center center/100% 100%;
+    }
+    &:nth-child(5) .doc-Photo{
+      background: url("../../images/index-icon/doc-2.png")no-repeat center center/100% 100%;
+    }
+    &:nth-child(6) .doc-Photo{
+      background: url("../../images/index-icon/doc-2.png")no-repeat center center/100% 100%;
+    }
+    &:nth-child(7) .doc-Photo{
+      background: url("../../images/index-icon/doc-2.png")no-repeat center center/100% 100%;
+    }
+    &:nth-child(8) .doc-Photo{
+      background: url("../../images/index-icon/doc-2.png")no-repeat center center/100% 100%;
+    }
+    &:nth-child(9) .doc-Photo{
+      background: url("../../images/index-icon/doc-2.png")no-repeat center center/100% 100%;
+    }
+    &:nth-child(10) .doc-Photo{
       background: url("../../images/index-icon/doc-2.png")no-repeat center center/100% 100%;
     }
     .doc-Photo {
@@ -224,7 +301,17 @@ header.indexHeader{
         word-break: break-all;
       }
       .hospital{
+        justify-content: space-between;
+        width: 100%;
         color: #fff !important;
+        .doc_index{
+        color: #6f5137;
+          $indexW:14px;
+          width: $indexW;
+          height: $indexW;
+          border-radius: 50%;
+          background-color: #fff;
+        }
       }
     }
   }
