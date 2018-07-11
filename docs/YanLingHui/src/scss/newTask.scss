@@ -57,7 +57,12 @@ body {
     color: #bebebe;
     margin-right: 10px;
 }
-
+#contentArea{
+    width: 88%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+}
 .test-content {
     .name{
         margin-top: 14px;
