@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/**
+主题色卡
+The YLH list of theme style colors.
+You may input all the variables of common global CSS here
+which watch its out that do not effect to others page.
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: white; }
+
+html, body {
+  font-size: 16px; }
+
+.header1 {
+  height: 50px;
+  background-color: #50b4f9;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 3rem; }
+  .header1 span {
+    font-size: 1.2rem; }
+  .header1 > a {
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: -3px;
+    font-size: 2rem; }
+
+.container {
+  margin: 0 6%; }
+
+.pContainer {
+  padding: 0 6%; }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.column {
+  flex-direction: column; }
+
+.container-fluied {
+  width: 100%; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  text-align: left;
+  vertical-align: baseline; }
+
+img {
+  border: none; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer; }
+
+ol, ul, li {
+  list-style: none; }
+
+body {
+  background-color: #F4F4F4; }
+
+.expertContainer {
+  height: calc(100% - 200px);
+  overflow: auto; }
+
+.search-bar {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box; }
+  .search-bar .key-search {
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #e9e9e9;
+    padding: 5px 0 5px 15px;
+    box-sizing: border-box; }
+    .search-bar .key-search .search-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url(../../images/search.jpg) 0 0 no-repeat;
+      background-size: cover; }
+    .search-bar .key-search .search-input {
+      border: none;
+      outline: none;
+      background-color: #e9e9e9;
+      font-size: 14px;
+      width: 250px;
+      vertical-align: 5px;
+      margin-left: 10px; }
+    .search-bar .key-search .search-input::-webkit-input-placeholder {
+      color: #989898; }
+
+.expertCategroy {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: white; }
+  .expertCategroy > span {
+    text-align: center;
+    width: 33%;
+    color: black;
+    line-height: 30px; }
+
+.expertList {
+  padding-top: 10px;
+  margin: 0 5%; }
+  .expertList li {
+    border-radius: 4px;
+    margin-top: 20px;
+    background: white; }
+    .expertList li > div {
+      background-image: url("../../images/expert/medal.png");
+      background-repeat: no-repeat;
+      background-size: 10%; }
+      .expertList li > div > aside {
+        display: inline-block;
+        width: 20%;
+        position: relative;
+        left: 6%;
+        top: 12px; }
+        .expertList li > div > aside > img {
+          border-radius: 50%; }
+      .expertList li > div > article {
+        position: relative;
+        left: 8%;
+        width: 64%;
+        display: inline-block; }
+        .expertList li > div > article > div:nth-child(1) > span:nth-child(1) {
+          font-size: 1rem;
+          margin-right: 10px; }
+        .expertList li > div > article > div:nth-child(1) > span:nth-child(2) {
+          font-size: 0.8rem;
+          margin-right: 10px; }
+        .expertList li > div > article > div:nth-child(1) > span:nth-child(3) {
+          font-size: 0.8rem;
+          margin-right: 10px; }
+        .expertList li > div > article > div:nth-child(2) {
+          display: flex;
+          justify-content: space-between; }
+          .expertList li > div > article > div:nth-child(2) > span:nth-child(1) {
+            font-size: 0.8rem;
+            color: #b78b64; }
+          .expertList li > div > article > div:nth-child(2) > span:nth-child(2) {
+            color: #50b4f9;
+            font-size: 0.8rem; }
+      .expertList li > div > footer {
+        border-top: 1px solid gray;
+        line-height: 30px;
+        margin-top: 20px;
+        font-size: 0.8rem;
+        line-height: 1rem;
+        padding: 6px 2%; }

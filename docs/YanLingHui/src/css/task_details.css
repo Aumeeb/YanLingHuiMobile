@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/**
+主题色卡
+The YLH list of theme style colors.
+You may input all the variables of common global CSS here
+which watch its out that do not effect to others page.
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: white; }
+
+html, body {
+  font-size: 16px; }
+
+.header1 {
+  height: 50px;
+  background-color: #50b4f9;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 3rem; }
+  .header1 span {
+    font-size: 1.2rem; }
+  .header1 > a {
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: -3px;
+    font-size: 2rem; }
+
+.container {
+  margin: 0 6%; }
+
+.pContainer {
+  padding: 0 6%; }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.column {
+  flex-direction: column; }
+
+.container-fluied {
+  width: 100%; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  text-align: left;
+  vertical-align: baseline; }
+
+img {
+  border: none; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer; }
+
+ol, ul, li {
+  list-style: none; }
+
+html, body {
+  height: 100%;
+  overflow: hidden; }
+
+* {
+  box-sizing: border-box; }
+
+.task_details {
+  border: 1px solid transparent;
+  color: #2e2e2e;
+  font-size: 1rem;
+  height: calc(100% - 50px);
+  background-color: #ebebeb; }
+  .task_details .task_title {
+    margin: 10px 0;
+    height: 40%;
+    background-color: #fff; }
+    .task_details .task_title li {
+      height: 25%;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 6%; }
+      .task_details .task_title li .normal {
+        color: #50b4f9; }
+      .task_details .task_title li .doubleBorder {
+        padding: 1px;
+        border: 1px solid #405ba3; }
+      .task_details .task_title li .no_accept {
+        color: #405ba3;
+        border: 1px solid #405ba3;
+        padding: 2px 4px; }
+  .task_details .task_content {
+    max-height: 50%;
+    overflow: auto;
+    background-color: #fff;
+    padding: 0 6%; }
+    .task_details .task_content .discription {
+      text-indent: 2em;
+      margin: 10px 0; }
+    .task_details .task_content .photo {
+      height: 70px;
+      width: 70px;
+      padding-bottom: 10px;
+      position: relative;
+      background: url(../../images/img1.jpg) no-repeat left top/cover; }

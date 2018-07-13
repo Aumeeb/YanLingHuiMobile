@@ -1,5 +1,5 @@
 # These order below that will not upload to github automatically
 node_modules
 install
-YanLingHui/src/js
-YanLingHui/src/css
+# YanLingHui/src/js
+# YanLingHui/src/css

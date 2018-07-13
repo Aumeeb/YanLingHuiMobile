@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/**
+主题色卡
+The YLH list of theme style colors.
+You may input all the variables of common global CSS here
+which watch its out that do not effect to others page.
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: white; }
+
+html, body {
+  font-size: 16px; }
+
+.header1 {
+  height: 50px;
+  background-color: #50b4f9;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 3rem; }
+  .header1 span {
+    font-size: 1.2rem; }
+  .header1 > a {
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: -3px;
+    font-size: 2rem; }
+
+.container {
+  margin: 0 6%; }
+
+.pContainer {
+  padding: 0 6%; }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.column {
+  flex-direction: column; }
+
+.container-fluied {
+  width: 100%; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  text-align: left;
+  vertical-align: baseline; }
+
+img {
+  border: none; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer; }
+
+ol, ul, li {
+  list-style: none; }
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #ebebeb; }
+
+.main {
+  background-color: #fff;
+  width: 100%;
+  max-width: 678px;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: yellow; }
+
+.footer {
+  height: 50px;
+  width: 100%;
+  background-color: #cccc77; }
+
+.test-item {
+  height: 60px;
+  line-height: 40px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc; }
+
+.name > span > i {
+  padding: 0 10px 0 10px;
+  color: red; }
+
+.input-name input {
+  border: none;
+  outline: none;
+  width: 195px;
+  text-align: right;
+  height: 17px; }
+
+.input-name input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #bebebe; }
+
+.right {
+  color: #bebebe;
+  margin-right: 10px; }
+
+#contentArea {
+  width: 88%;
+  height: 100%;
+  border: 0;
+  outline: 0; }
+
+.test-content {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 180px;
+  outline: none; }
+  .test-content .name {
+    margin-top: 14px; }
+  .test-content .task_dis {
+    height: 40%;
+    padding: 0 10px;
+    color: #C3C3C3;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-indent: 24px;
+    overflow: auto; }
+  .test-content .upload {
+    height: 20%; }
+    .test-content .upload img {
+      position: relative;
+      display: none;
+      top: -10px;
+      width: 40px;
+      height: 40px;
+      margin-left: 6px; }
+    .test-content .upload input {
+      display: none; }
+    .test-content .upload label {
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      background: url(../../images/upload.png) no-repeat center/83%;
+      border-radius: 5px; }
+    .test-content .upload .upload_hint {
+      position: relative;
+      margin-left: 10px;
+      top: -30px;
+      color: #C3C3C3; }
+
+.public {
+  display: block;
+  width: 320px;
+  height: 40px;
+  position: absolute;
+  bottom: 134px;
+  left: calc(50% - 160px);
+  line-height: 40px;
+  color: #fff;
+  background-color: #50b3f8;
+  border-radius: 5px;
+  margin: 0 auto; }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  text-align: left;
+  vertical-align: baseline; }
+
+img {
+  border: none; }
+
+body,
+p,
+td,
+th,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer; }
+
+ol,
+ul {
+  list-style: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.fs12 {
+  font-size: 12px; }
+
+.fs14 {
+  font-size: 14px; }
+
+.fs14 {
+  font-size: 14px; }
+
+.fs16 {
+  font-size: 16px; }
+
+.fs18 {
+  font-size: 18px; }
+
+.textLeft {
+  text-align: left; }
+
+.textCenter {
+  text-align: center; }
+
+.textRight {
+  text-align: right; }
+
+/*******************************图标库***********************************/
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*******************************清除浮动代码***********************************/
+.clearfloat:before,
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0; }
+
+.clearfloat {
+  zoom: 1; }
