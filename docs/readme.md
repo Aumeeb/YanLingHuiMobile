@@ -28,7 +28,7 @@ new Reg;
 
 
 # Authors                 Roles                   Accomplishment                     Email 
-@🍍Noberk         Frond-end web     已完成页面数量5💛️      noberkli@gmail.com <Br/>
+@🍍Noberk         Frond-end web     已完成页面数量5💛️      
 @🥇产百海           Frond-end web     已完成页面数量7💚                                            <Br/>
 @🏅Michelle       Frond-end web     已完成页面数量0❤️
                                                                     
